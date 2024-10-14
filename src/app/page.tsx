@@ -107,6 +107,10 @@ const FAQ = () => (
         question="Quel sera le menu des repas?"
         answer="Tous les repas sont offerts pendant la weekend. Nous allons partages les details prochainement. Nous allons tenir compte des restrictions alimentaires."
       />
+      <FAQItem
+        question="Vous avez une question qui n'est pas mentionnée ici?"
+        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com"
+      />
     </div>
   </section>
 )
