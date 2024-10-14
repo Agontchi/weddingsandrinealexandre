@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
 
-
-
       <h1 className="text-4xl font-serif mb-4">Sandrine & Alexandre</h1>
 
       <p className="text-xl mb-8">Rejoignez-nous pour notre célébration de mariage,</p>
@@ -19,7 +17,7 @@ export default function Home() {
         <Button>Confirmer la Presence</Button>
       </Link>
 
-      <p className="text-xl mb-8">Le site web est en construction et aura plus d'information dans quelques semaines</p>
+      <p className="text-xl mb-8">Le site web est en construction et aura plus de détails dans quelques semaines</p>
       <Image
         src="/images/image_principale.jpg"
         alt="Your Image"
