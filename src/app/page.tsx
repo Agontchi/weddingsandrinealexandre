@@ -41,7 +41,7 @@ const Agenda = () => (
       />
       <AgendaItem
         date="Samedi 9 Août 2025"
-        title="Ceremonie, Réception & Party"
+        title="Cérémonie, Réception & Party"
         time="Heures exactes à confirmer"
       />
       <AgendaItem
@@ -102,7 +102,7 @@ const FAQ = () => (
       />
       <FAQItem
         question="Quel est le dress-code ?"
-        answer="Habillez-vous chic et classe. Nous allons fournir plus de détails sur ce site web plus tard. Prenez des affaires confortables pour le vendredi et dimanche."
+        answer="Habillez-vous chic et classe. Nous allons fournir plus de détails sur ce site web plus tard."
       />
       <FAQItem
         question="Quel sera le menu des repas ?"
