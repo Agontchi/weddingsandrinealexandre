@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar } from "lucide-react"
 import { useState } from 'react'
+import CountdownTimer from './components/CountdownTimer'
 
 const NavigationBar = () => (
   <nav className="sticky top-0 bg-white shadow-md z-50">
@@ -85,31 +86,31 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 
 const FAQ = () => (
   <section id="faq" className="my-12 px-4 max-w-6xl mx-auto">
-    <h2 className="text-3xl font-serif mb-6 text-center">Frequently Asked Questions</h2>
+    <h2 className="text-3xl font-serif mb-6 text-center">Foire aux questions</h2>
     <div className="space-y-2">
       <FAQItem
-        question="Est-ce que nous devons payer pour participer au mariage?"
-        answer="Le mariage est entierement à notre charge. Vous devez juste venir faire la fête avec nous tout le weekend."
+        question="Est-ce que nous devons payer pour participer au mariage ?"
+        answer="Le mariage est entièrement à notre charge. Vous devez juste venir faire la fête avec nous tout le week-end."
       />
       <FAQItem
-        question="Est-ce que je peux venir avec un +1?"
+        question="Est-ce que je peux venir avec un +1 ?"
         answer="En raison des limitations de capacité du lieu, nous ne pouvons accueillir que les invités formellement mentionnés sur votre invitation. Nous vous remercions de votre compréhension."
       />
       <FAQItem
-        question="Est-ce que je peux venir avec mon enfant?"
-        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com"
+        question="Est-ce que je peux venir avec mon enfant ?"
+        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com."
       />
       <FAQItem
-        question="Quel est le dress-code?"
-        answer="Habillez vous chic et classe. Nous allons fournir plus de details sur ce site web plus tard. Prennez des affaires comfortables pour le vendredi et dimanche."
+        question="Quel est le dress-code ?"
+        answer="Habillez-vous chic et classe. Nous allons fournir plus de détails sur ce site web plus tard. Prenez des affaires confortables pour le vendredi et dimanche."
       />
       <FAQItem
-        question="Quel sera le menu des repas?"
-        answer="Tous les repas sont offerts pendant la weekend. Nous allons partages les details prochainement. Nous allons tenir compte des restrictions alimentaires."
+        question="Quel sera le menu des repas ?"
+        answer="Tous les repas sont offerts pendant le week-end. Nous allons partager les détails prochainement. Nous tiendrons compte des restrictions alimentaires."
       />
       <FAQItem
-        question="Vous avez une question qui n'est pas mentionnée ici?"
-        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com"
+        question="Vous avez une question qui n'est pas mentionnée ici ?"
+        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com."
       />
     </div>
   </section>
@@ -123,9 +124,9 @@ export default function Home() {
       <div className="relative w-full h-screen">
         <Image
           src="/images/image_principale.jpg"
-          alt="Wedding Couple"
-          layout="fill"
-          objectFit="cover"
+          alt="Sandrine and Alexandre's wedding celebration"
+          fill
+          style={{ objectFit: 'cover' }}
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
@@ -140,6 +141,7 @@ export default function Home() {
         </div>
       </div>
 
+      <CountdownTimer />
       <Agenda />
       <FAQ />
     </main>
