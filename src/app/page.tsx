@@ -33,17 +33,17 @@ const Agenda = () => (
       <AgendaItem
         date="Vendredi 8 Aout 2025 | Friday, August 8th, 2025 "
         title="Arrival & Dinner"
-        time="2:00 PM - 10:00 PM"
+        time="TBD"
       />
       <AgendaItem
         date="Samedi 9 Aout 2025 | Saturday, August 9th, 2025"
         title="Ceremony & Reception"
-        time="2:00 PM - Late"
+        time="TBD"
       />
       <AgendaItem
         date="Dimanche 10 Aout 2025 |Sunday, August 10th, 2025"
         title="Brunch"
-        time="11:00 AM - 2:00 PM"
+        time="TBD"
       />
     </div>
   </section>
