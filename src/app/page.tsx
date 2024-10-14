@@ -1,6 +1,7 @@
 import { Button } from './components/ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
+// import { Calendar, MapPin, Users, Bed, Car, Camera, Gift, Utensils, Music } from "lucide-react"
 
 export default function Home() {
 
