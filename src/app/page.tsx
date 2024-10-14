@@ -36,17 +36,17 @@ const Agenda = () => (
       <AgendaItem
         date="Vendredi 8 Août 2025"
         title="Arrivé au Château"
-        time="À confirmer"
+        time="Heures exactes à confirmer"
       />
       <AgendaItem
         date="Samedi 9 Août 2025"
         title="Ceremonie, Réception & Party"
-        time="À confirmer"
+        time="Heures exactes à confirmer"
       />
       <AgendaItem
         date="Dimanche 10 Août 2025"
         title="Brunch"
-        time="À confirmer"
+        time="Heures exactes à confirmer"
       />
     </div>
   </section>
