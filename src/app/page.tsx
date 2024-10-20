@@ -130,7 +130,7 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
-          <h1 className="text-4xl md:text-6xl font-serif mb-4 text-center">Mariage d'Alexandre et Sandrine</h1>
+          <h1 className="text-4xl md:text-6xl font-serif mb-4 text-center">Alexandre et Sandrine</h1>
           <p className="text-xl md:text-2xl mb-4 text-center">Au plaisir de célébrer ce beau moment avec vous</p>
           {/* <p className="text-xl md:text-2xl mb-8 text-center">Join us for our wedding celebration</p> */}
           <Link href="https://forms.gle/1RLgLjuV2FbgPs1h9" target="_blank">
