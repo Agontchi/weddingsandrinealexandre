@@ -5,8 +5,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair-display' })
 
 export const metadata = {
-  title: 'Sandrine & Alexandre Wedding',
-  description: 'Join us for our wedding celebration in Bourgogne',
+  title: 'Alexandre & Sandrine Mariage',
+  description: 'Venez vous joindre à notre célébration de mariage en Bourgogne',
 }
 
 export default function RootLayout({
