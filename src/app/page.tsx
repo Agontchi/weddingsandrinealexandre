@@ -56,7 +56,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center p-8 md:p-12 border border-gray-200">
               <div className="mb-8">
                 <h2 className="font-serif text-2xl text-center mb-2">
-                  <span className="inline-block">A&S</span>
+                  <span className="inline-block">A&amp;S</span>
                   <span className="inline-block mx-1"></span>
                 </h2>
               </div>
@@ -67,11 +67,11 @@ export default function Home() {
               </h3>
               
               <p className="text-center text-sm leading-relaxed mb-8">
-              C'est une immense joie que nous vous convions à partager ce moment unique et précieux à nos côtés nous serions ravis de vous compter parmi nous pour un week-end souvenirs inoubliable entouré de ceux qui nous aimons dans un lieu emprunt de charme et d'histoire
+              C&apos;est une immense joie que nous vous convions &agrave; partager ce moment unique et pr&eacute;cieux &agrave; nos c&ocirc;t&eacute;s nous serions ravis de vous compter parmi nous pour un week-end souvenirs inoubliable entour&eacute; de ceux qui nous aimons dans un lieu emprunt de charme et d&apos;histoire
               </p>
               
               <button className="btn hover:bg-primary hover:text-white">
-                Découvrir nos horaires détaillés
+                D&eacute;couvrir nos horaires d&eacute;taill&eacute;s
               </button>
             </div>
             
@@ -97,15 +97,29 @@ export default function Home() {
           <div className="max-w-3xl mx-auto px-4 relative">
             <div className="testimonial-content text-center">
               <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
-                I don't even want to imagine what our wedding day would have looked like without Courtney Wolf and the Invision team. Even the week of the wedding I had minor ideas in my head, and Courtney's response to executing them was always "Of Course!" The day of the wedding we were not left out but not to worry about a single thing because we knew we were in such great hands and everything would be taken care of, and it was! Wedding planning can be stressful but Invision made it seamless and fun to plan. Courtney, genuinely helps if you go to work with Invision. Thank you Courtney and Invision Events for making May 5th 2018 a dream and the greatest day of our lives!!
+                I don&apos;t even want to imagine what our wedding day would have looked like without Courtney Wolf and the Invision team. Even the week of the wedding I had minor ideas in my head, and Courtney&apos;s response to executing them was always &quot;Of Course!&quot; The day of the wedding we were not left out but not to worry about a single thing because we knew we were in such great hands and everything would be taken care of, and it was! Wedding planning can be stressful but Invision made it seamless and fun to plan. Courtney, genuinely helps if you go to work with Invision. Thank you Courtney and Invision Events for making May 5th 2018 a dream and the greatest day of our lives!!
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      
-      
+      {/* Contact */}
+      <section className="py-16">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto px-4 relative">
+            <div className="testimonial-content text-center">
+              <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
+                Nous sommes ravis de vous accueillir &agrave; notre mariage et esp&eacute;rons que vous passerez un moment inoubliable en notre compagnie. C&apos;est un honneur de partager ce jour sp&eacute;cial avec vous.
+              </p>
+              <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
+                Pour toute question, n&apos;h&eacute;sitez pas &agrave; nous contacter &agrave; l&apos;adresse &quot;contact@alexsandrine2025.com&quot; ou par t&eacute;l&eacute;phone au &quot;06 00 00 00 00&quot;.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <Footer />
     </main>

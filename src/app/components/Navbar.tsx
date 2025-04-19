@@ -2,11 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-
-interface NavbarProps {
-  // isTransparent?: boolean
-}
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -19,8 +14,8 @@ export default function Navbar() {
           {/* Desktop Navigation - Left */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="nav-link hover:text-gray-400">Home</Link>
-            <Link href="/notre-histoire" className="nav-link hover:text-gray-400">Notre Histoire</Link>
-            <Link href="/nos-voeux" className="nav-link hover:text-gray-400">Nos Voeux</Link>
+            <Link href="/pages/notre-histoire" className="nav-link hover:text-gray-400">Notre Histoire</Link>
+            <Link href="/pages/nos-voeux" className="nav-link hover:text-gray-400">Nos Voeux</Link>
           </div>
 
           {/* Always Centered Logo */}
@@ -32,9 +27,9 @@ export default function Navbar() {
 
           {/* Desktop Navigation - Right */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/preparations" className="nav-link hover:text-gray-400">Préparations</Link>
-            <Link href="/horraires" className="nav-link hover:text-gray-400">Horraires</Link>
-            <Link href="/questions" className="nav-link hover:text-gray-400">Questions</Link>
+            <Link href="/ceremonie/preparations" className="nav-link hover:text-gray-400">Préparations</Link>
+            <Link href="/ceremonie/horraires" className="nav-link hover:text-gray-400">Horraires</Link>
+            <Link href="/pages/questions" className="nav-link hover:text-gray-400">Questions</Link>
           </div>
 
           {/* Mobile menu button */}
