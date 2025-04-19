@@ -1,149 +1,113 @@
-'use client';
-
-import { Button } from './components/ui/button'
-import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar } from "lucide-react"
-import { useState } from 'react'
-import CountdownTimer from './components/CountdownTimer'
-
-const NavigationBar = () => (
-  <nav className="sticky top-0 bg-white shadow-md z-50">
-    <div className="container mx-auto px-4 py-4 flex justify-center space-x-6">
-      <Link href="#rsvp" className="text-emerald-700 hover:text-emerald-900">RSVP</Link>
-      <Link href="#agenda" className="text-emerald-700 hover:text-emerald-900">Agenda</Link>
-      {/* <Link href="#accommodations" className="text-emerald-700 hover:text-emerald-900">Accommodations</Link> */}
-      {/* <Link href="#travel" className="text-emerald-700 hover:text-emerald-900">Travel</Link> */}
-      <Link href="#faq" className="text-emerald-700 hover:text-emerald-900">FAQ</Link>
-    </div>
-  </nav>
-)
-
-const AgendaItem = ({ date, title, time }: { date: string; title: string; time: string }) => (
-  <div className="bg-white p-6 rounded-lg shadow-md">
-    <h3 className="flex items-center text-lg font-semibold mb-2">
-      <Calendar className="mr-2 text-emerald-700" />
-      {date}
-    </h3>
-    <p className="text-center font-medium">{title}</p>
-    <p className="text-center text-gray-600">{time}</p>
-  </div>
-)
-
-const Agenda = () => (
-  <section id="agenda" className="my-12 px-4 max-w-6xl mx-auto">
-    <h2 className="text-3xl font-serif mb-6 text-center">Agenda du Mariage</h2>
-    <div className="grid md:grid-cols-3 gap-6">
-      <AgendaItem
-        date="Vendredi 8 Août 2025"
-        title="Arrivé au Château"
-        time="Heures exactes à confirmer"
-      />
-      <AgendaItem
-        date="Samedi 9 Août 2025"
-        title="Cérémonie, Réception & Party"
-        time="Heures exactes à confirmer"
-      />
-      <AgendaItem
-        date="Dimanche 10 Août 2025"
-        title="Brunch"
-        time="Heures exactes à confirmer"
-      />
-    </div>
-  </section>
-)
-
-const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border-b border-gray-200 py-4">
-      <button
-        className="flex justify-between items-center w-full text-left"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <span className="font-medium">{question}</span>
-        <span className="ml-6 flex-shrink-0">
-          {isOpen ? (
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-            </svg>
-          ) : (
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          )}
-        </span>
-      </button>
-      {isOpen && (
-        <div className="mt-2 pr-12">
-          <p className="text-gray-700">{answer}</p>
-        </div>
-      )}
-    </div>
-  );
-};
-
-const FAQ = () => (
-  <section id="faq" className="my-12 px-4 max-w-6xl mx-auto">
-    <h2 className="text-3xl font-serif mb-6 text-center">Foire aux questions</h2>
-    <div className="space-y-2">
-      <FAQItem
-        question="Est-ce que nous devons payer pour participer au mariage ?"
-        answer="Le mariage est entièrement à notre charge. Vous devez juste venir faire la fête avec nous tout le week-end."
-      />
-      <FAQItem
-        question="Est-ce que je peux venir avec un +1 ?"
-        answer="En raison des limitations de capacité du lieu, nous ne pouvons accueillir que les invités formellement mentionnés sur votre invitation. Nous vous remercions de votre compréhension."
-      />
-      <FAQItem
-        question="Est-ce que je peux venir avec mon enfant ?"
-        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com."
-      />
-      <FAQItem
-        question="Quel est le dress-code ?"
-        answer="Habillez-vous chic et classe. Nous allons fournir plus de détails sur ce site web plus tard."
-      />
-      <FAQItem
-        question="Quel sera le menu des repas ?"
-        answer="Tous les repas sont offerts pendant le week-end. Nous allons partager les détails prochainement. Nous tiendrons compte des restrictions alimentaires."
-      />
-      <FAQItem
-        question="Vous avez une question qui n'est pas mentionnée ici ?"
-        answer="Envoyez un mail à gontchi@gmail.com et sandrinecarey@hotmail.com."
-      />
-    </div>
-  </section>
-)
+import Navbar from '@/app/components/Navbar'
+import Footer from '@/app/components/Footer'
+import CountdownTimer from '@/app/components/CountdownTimer'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
-      <NavigationBar />
-
-      <div className="relative w-full h-screen">
-        <Image
-          src="/images/image_principale.jpg"
-          alt="Alexandre & Sandrine vous invitent à la célébration de mariage en Bourgogne"
-          fill
-          style={{ objectFit: 'cover' }}
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white p-4">
-          <h1 className="text-4xl md:text-6xl font-serif mb-4 text-center">Alexandre et Sandrine</h1>
-          <p className="text-xl md:text-2xl mb-4 text-center">Au plaisir de célébrer ce beau moment avec vous</p>
-          {/* <p className="text-xl md:text-2xl mb-8 text-center">Join us for our wedding celebration</p> */}
-          <Link href="https://forms.gle/1RLgLjuV2FbgPs1h9" target="_blank">
-            <Button className="bg-white text-black hover:bg-gray-200">Confirmer la Presence</Button>
-          </Link>
-          <p className="text-lg mt-8 text-center">Le site web est en construction et aura plus de détails dans quelques semaines</p>
-          <p className="text-lg mt-8 text-center">Utilisez Google Translate pour traduire dans la langue de votre choix</p>
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-screen">
+        <div className="absolute inset-0">
+          <Image 
+            src="/images/image_principale.jpg" 
+            alt="Wedding couple embracing" 
+            fill 
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 hero-overlay"></div>
         </div>
-      </div>
-
+        
+        <div className="relative z-10 h-full">
+          {/* Top Navigation */}
+          <Navbar />
+          
+          {/* Hero Content */}
+          <div className="flex flex-col items-center justify-center h-full pt-12 px-4 text-center">
+            <div className="bg-white bg-opacity-95 p-8 md:p-12 logo-container max-w-md">
+              <h1 className="font-serif text-3xl md:text-4xl uppercase tracking-widest mb-2">Invision Events</h1>
+              <p className="text-sm uppercase tracking-wider mb-0">Wedding Planning & Design</p>
+            </div>
+            
+            <div className="mt-auto mb-16 text-white">
+              <p className="uppercase tracking-widest text-xs md:text-sm mb-2">Scroll to begin</p>
+              <div className="h-12 w-px bg-white mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Services Section */}
+      <section className="py-24">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {/* Left image */}
+            <div className="relative h-90 md:h-full">
+              <Image 
+                src="/images/chalet_avec_loutres.jpg" 
+                alt="Chalet avec loutre" 
+                fill
+                className="object-cover"
+              />
+            </div>
+            
+            {/* Center content */}
+            <div className="flex flex-col items-center justify-center p-8 md:p-12 border border-gray-200">
+              <div className="mb-8">
+                <h2 className="font-serif text-2xl text-center mb-2">
+                  <span className="inline-block">A&S</span>
+                  <span className="inline-block mx-1"></span>
+                </h2>
+              </div>
+              
+              <h3 className="font-serif text-xl md:text-2xl uppercase tracking-wide text-center mb-4">
+                Une union<br />
+                Transatlantique
+              </h3>
+              
+              <p className="text-center text-sm leading-relaxed mb-8">
+              C'est une immense joie que nous vous convions à partager ce moment unique et précieux à nos côtés nous serions ravis de vous compter parmi nous pour un week-end souvenirs inoubliable entouré de ceux qui nous aimons dans un lieu emprunt de charme et d'histoire
+              </p>
+              
+              <button className="btn hover:bg-primary hover:text-white">
+                Découvrir nos horaires détaillés
+              </button>
+            </div>
+            
+            {/* Right image */}
+            <div className="relative h-96 md:h-full">
+              <Image 
+                src="/images/rest_loutres.jpeg" 
+                alt="Wedding lounge area" 
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Countdown Timer */}
       <CountdownTimer />
-      <Agenda />
-      <FAQ />
+      
+      {/* Testimonial Section */}
+      <section className="py-16 bg-secondary text-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto px-4 relative">
+            <div className="testimonial-content text-center">
+              <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
+                I don't even want to imagine what our wedding day would have looked like without Courtney Wolf and the Invision team. Even the week of the wedding I had minor ideas in my head, and Courtney's response to executing them was always "Of Course!" The day of the wedding we were not left out but not to worry about a single thing because we knew we were in such great hands and everything would be taken care of, and it was! Wedding planning can be stressful but Invision made it seamless and fun to plan. Courtney, genuinely helps if you go to work with Invision. Thank you Courtney and Invision Events for making May 5th 2018 a dream and the greatest day of our lives!!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      
+      {/* Footer */}
+      <Footer />
     </main>
   )
 }

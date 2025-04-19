@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-primary bg-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .nav-link {
+    @apply uppercase tracking-widest text-xs font-sans mx-4 transition-colors duration-300;
+  }
+  
+  .btn {
+    @apply px-6 py-3 uppercase tracking-widest text-xs font-sans border border-primary transition-colors duration-300;
+  }
+  
+  .section-title {
+    @apply font-serif text-2xl md:text-3xl text-center mb-8;
+  }
+  
+  .container-custom {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Custom styles */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  position: relative;
+}
+
+.testimonial-content::before,
+.testimonial-content::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  background-color: #5a6b5d;
+  top: 50%;
+}
+
+.testimonial-content::before {
+  left: -120px;
+}
+
+.testimonial-content::after {
+  right: -120px;
 }

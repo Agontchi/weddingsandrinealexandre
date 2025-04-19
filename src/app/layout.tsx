@@ -1,22 +1,26 @@
+import type { Metadata } from 'next'
 import './globals.css'
-import { Inter, Playfair_Display } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair-display' })
-
-export const metadata = {
-  title: 'Alexandre & Sandrine Mariage',
-  description: 'Venez vous joindre à notre célébration de mariage en Bourgogne',
+export const metadata: Metadata = {
+  title: 'Invision Events | Wedding Planning & Design',
+  description: 'Luxury wedding planning and event design services',
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>{children}</body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+      </head>
+      <body className="font-sans text-primary bg-light">
+        {children}
+      </body>
     </html>
   )
 }

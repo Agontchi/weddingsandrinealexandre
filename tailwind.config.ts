@@ -9,15 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#10b981',
-        secondary: '#f3f4f6',
+        'primary': '#333333',
+        'secondary': '#5a6b5d', // The greenish-gray color in the bottom section
+        'accent': '#e0d8d0', // Subtle beige accent color
+        'light': '#f8f7f5', // Light background color
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        serif: ['var(--font-playfair-display)'],
+        'serif': ['Cormorant Garamond', 'serif'],
+        'sans': ['Montserrat', 'sans-serif'],
       },
+      spacing: {
+        '128': '32rem',
+      },
+      height: {
+        'hero': 'calc(100vh - 80px)',
+      },
+      letterSpacing: {
+        'widest': '0.2em',
+      }
     },
   },
   plugins: [],
 }
+
 export default config
