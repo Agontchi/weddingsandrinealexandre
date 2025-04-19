@@ -1,12 +1,11 @@
 'use client';
 
-import { Button } from './components/ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar } from "lucide-react"
 import { useState } from 'react'
-import CountdownTimer from './components/CountdownTimer'
-import FAQ from './components/Faq';
+import CountdownTimer from '@/app/components/CountdownTimer'
+import FAQ from '@/app/components/Faq';
 
 const NavigationBar = () => (
   <nav className="sticky top-0 bg-white shadow-md z-50">
@@ -105,7 +104,7 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-4 text-center">Au plaisir de célébrer ce beau moment avec vous</p>
           {/* <p className="text-xl md:text-2xl mb-8 text-center">Join us for our wedding celebration</p> */}
           <Link href="https://forms.gle/1RLgLjuV2FbgPs1h9" target="_blank">
-            <Button className="bg-white text-black hover:bg-gray-200">Confirmer la Presence</Button>
+            {/* <Button className="bg-white text-black hover:bg-gray-200">Confirmer la Presence</Button> */}
           </Link>
           <p className="text-lg mt-8 text-center">Le site web est en construction et aura plus de détails dans quelques semaines</p>
           <p className="text-lg mt-8 text-center">Utilisez Google Translate pour traduire dans la langue de votre choix</p>

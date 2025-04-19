@@ -19,8 +19,8 @@ export default function Navbar() {
           {/* Desktop Navigation - Left */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="nav-link hover:text-gray-400">Home</Link>
-            <Link href="/about" className="nav-link hover:text-gray-400">Notre Histoire</Link>
-            <Link href="/process" className="nav-link hover:text-gray-400">Nos Voeux</Link>
+            <Link href="/notre-histoire" className="nav-link hover:text-gray-400">Notre Histoire</Link>
+            <Link href="/nos-voeux" className="nav-link hover:text-gray-400">Nos Voeux</Link>
           </div>
 
           {/* Always Centered Logo */}
@@ -32,9 +32,9 @@ export default function Navbar() {
 
           {/* Desktop Navigation - Right */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/portfolio" className="nav-link hover:text-gray-400">Préparations</Link>
-            <Link href="/journal" className="nav-link hover:text-gray-400">Horraires</Link>
-            <Link href="/connect" className="nav-link hover:text-gray-400">Questions</Link>
+            <Link href="/preparations" className="nav-link hover:text-gray-400">Préparations</Link>
+            <Link href="/horraires" className="nav-link hover:text-gray-400">Horraires</Link>
+            <Link href="/questions" className="nav-link hover:text-gray-400">Questions</Link>
           </div>
 
           {/* Mobile menu button */}
@@ -83,39 +83,39 @@ export default function Navbar() {
                 Home
               </Link>
               <Link 
-                href="/about" 
+                href="/notre-histoire" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
-                href="/process" 
+                href="/nos-voeux" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Process
+                Nos Voeux
               </Link>
               <Link 
-                href="/portfolio" 
+                href="/preparations" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Portfolio
+                Préparations
               </Link>
               <Link 
-                href="/journal" 
+                href="/horraires" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Journal
+                Horraires
               </Link>
               <Link 
-                href="/connect" 
+                href="/questions" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Connect
+                Questions
               </Link>
             </div>
           </div>
