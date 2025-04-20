@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Navbar from '@/app/components/Navbar'
 import Footer from '@/app/components/Footer'
 import CountdownTimer from '@/app/components/CountdownTimer'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -70,9 +71,11 @@ export default function Home() {
               C&apos;est une immense joie que nous vous convions &agrave; partager ce moment unique et pr&eacute;cieux &agrave; nos c&ocirc;t&eacute;s nous serions ravis de vous compter parmi nous pour un week-end souvenirs inoubliable entour&eacute; de ceux qui nous aimons dans un lieu emprunt de charme et d&apos;histoire
               </p>
               
-              <button className="btn hover:bg-primary hover:text-white">
-                D&eacute;couvrir nos horaires d&eacute;taill&eacute;s
-              </button>
+              <Link href="/ceremonie/preparations" passHref legacyBehavior>
+                <a className="btn hover:bg-primary hover:text-white">
+                  Comment se préparer au mariage ?
+                </a>
+              </Link>
             </div>
             
             {/* Right image */}

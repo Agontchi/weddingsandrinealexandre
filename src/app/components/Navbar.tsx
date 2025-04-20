@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Desktop Navigation - Right */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/ceremonie/preparations" className="nav-link hover:text-gray-400">Préparations</Link>
-            <Link href="/ceremonie/horraires" className="nav-link hover:text-gray-400">Horraires</Link>
+            <Link href="/ceremonie/horaire" className="nav-link hover:text-gray-400">Horaire</Link>
             <Link href="/pages/questions" className="nav-link hover:text-gray-400">Questions</Link>
           </div>
 
