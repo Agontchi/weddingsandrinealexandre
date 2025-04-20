@@ -17,14 +17,14 @@ export default function PreparationPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-serif text-4xl md:text-5xl mb-6">Votre guide pour notre week-end de mariage</h1>
             <p className="text-lg mb-8">Tout ce que vous devez savoir sur notre célébration au Château de Percey</p>
-            <div className="flex justify-center">
-              <Link href="#rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-2">
+            <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-2">
+              <Link href="#rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-0 md:mx-2">
                 Répondez maintenant
               </Link>
-              <Link href="#dresscode" className="btn border-white text-white hover:bg-white hover:text-secondary mx-2">
+              <Link href="#dresscode" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
                 Voir le dress code
               </Link>
-              <Link href="#logistics" className="btn border-white text-white hover:bg-white hover:text-secondary mx-2">
+              <Link href="#logistics" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
                 Voir les détails logistiques
               </Link>
             </div>
@@ -200,7 +200,7 @@ export default function PreparationPage() {
               <div className="text-center">
                 <Link 
                   href="#rsvp" 
-                  className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white"
+                  className="btn inline-block bg-white text-secondary border-white hover:bg-transparent hover:text-white"
                 >
                   Enregistrez votre voiture ou trouvez un trajet
                 </Link>
@@ -215,25 +215,21 @@ export default function PreparationPage() {
                 <div className="bg-accent p-6">
                   <h4 className="font-semibold text-lg mb-2">Au château</h4>
                   <p className="mb-4">
-                    Le château dispose de 65 lits pour les invités. L&apos;hébergement au château sera attribué en fonction des groupes familiaux et de la distance parcourue.
+                    Le château dispose de 65 lits pour les invités. L&apos;hébergement au château est attribué en fonction des groupes familiaux et des reponses reçues dans le formulaire de réponse de l&apos;invitation.
                   </p>
                   <p className="text-sm">
-                    Veuillez indiquer vos préférences d&apos;hébergement dans le formulaire de réponse. Nous confirmerons vos détails d&apos;hébergement avant [date].
+                    Le plan des chambres sera disponible sur la page plans. 
                   </p>
+                  <Link href="/ceremonie/plans" className="btn inline-block bg-white text-secondary border-white hover:bg-transparent hover:text-white mt-4">
+                    Voir le plan des chambres
+                  </Link>
+
                 </div>
                 
                 <div className="bg-accent p-6">
                   <h4 className="font-semibold text-lg mb-2">Options à proximité</h4>
                   <p className="mb-4">
-                    Pour les invités qui ne séjournent pas au château, nous avons négocié des tarifs spéciaux dans les hébergements suivants :
-                  </p>
-                  <ul className="list-disc pl-5">
-                    <li className="mb-1">[Hotel Name 1] - 5km du lieu</li>
-                    <li className="mb-1">[Hotel Name 2] - 8km du lieu</li>
-                    <li className="mb-1">[B&amp;B Name] - 3km du lieu</li>
-                  </ul>
-                  <p className="mt-2 text-sm italic">
-                    Utilisez le code &quot;WEDDING2025&quot; lors de la réservation pour bénéficier d&apos;un tarif spécial.
+                    Pour les invités qui ne séjournent pas au château, nous vous envoyons les informations sur les hébergements au plus tard un mois avant le mariage.
                   </p>
                 </div>
               </div>
@@ -480,7 +476,7 @@ export default function PreparationPage() {
                     href="#rsvp" 
                     className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white"
                   >
-                    Soumettre vos exigences alimentaires
+                    Nous aviser de vos alergies et restrictions alimentaires
                   </Link>
                 </div>
               </div>

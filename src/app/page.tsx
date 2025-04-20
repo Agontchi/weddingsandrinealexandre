@@ -71,11 +71,13 @@ export default function Home() {
               C&apos;est une immense joie que nous vous convions &agrave; partager ce moment unique et pr&eacute;cieux &agrave; nos c&ocirc;t&eacute;s nous serions ravis de vous compter parmi nous pour un week-end souvenirs inoubliable entour&eacute; de ceux qui nous aimons dans un lieu emprunt de charme et d&apos;histoire
               </p>
               
-              <Link href="/ceremonie/preparations" passHref legacyBehavior>
-                <a className="btn hover:bg-primary hover:text-white">
-                  Comment se préparer au mariage ?
-                </a>
-              </Link>
+              <div className="text-center">
+                <Link href="/ceremonie/preparations" legacyBehavior>
+                  <a className="btn inline-block hover:bg-primary hover:text-white">
+                    Comment se préparer au mariage ?
+                  </a>
+                </Link>
+              </div>
             </div>
             
             {/* Right image */}

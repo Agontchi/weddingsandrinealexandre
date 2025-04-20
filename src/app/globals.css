@@ -22,7 +22,19 @@
   }
   
   .btn {
-    @apply px-6 py-3 uppercase tracking-widest text-xs font-sans border border-primary transition-colors duration-300;
+    @apply inline-block px-6 py-3 rounded-md text-sm font-medium uppercase tracking-widest min-w-[200px] md:min-w-[240px] text-center font-sans border transition-colors duration-300 focus:outline-none;
+  }
+  
+  .button-main {
+    @apply inline-block px-6 py-3 rounded-md text-sm font-medium uppercase tracking-widest min-w-[200px] md:min-w-[240px] text-center font-sans border transition-colors duration-300 focus:outline-none bg-primary text-white border-primary hover:bg-transparent hover:text-primary;
+  }
+  
+  .button-main.bg-blue {
+    @apply bg-blue-600 hover:bg-transparent hover:text-blue-600 border-blue-600 text-white;
+  }
+  
+  .button-main.text-button-sm {
+    @apply text-xs py-2 px-4 min-w-[160px] md:min-w-[180px];
   }
   
   .section-title {
