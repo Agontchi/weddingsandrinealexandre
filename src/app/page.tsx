@@ -101,21 +101,21 @@ export default function Home() {
             <div className="testimonial-content text-center">
               <blockquote lang="fr" className="poem-text">
                 <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-6">
-                  Sous la plume d'un Pouchkine renaissant,<br/>
-                  L'union sacrée, telle une icône d'or,<br/>
-                  Brille dans l'église aux coupoles d'argent.<br/>
-                  Deux âmes s'unissent en un seul accord.
+                  Sous la plume d&apos;un Pouchkine renaissant,<br/>
+                  L&apos;union sacrée, telle une icône d&apos;or,<br/>
+                  Brille dans l&apos;église aux coupoles d&apos;argent.<br/>
+                  Deux âmes s&apos;unissent en un seul accord.
                 </p>
                 <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-6">
                   Les couronnes orthodoxes sur leurs fronts,<br/>
-                  Symboles d'un amour pur et éternel,<br/>
-                  Tandis que l'encens s'élève en volutes blondes,<br/>
+                  Symboles d&apos;un amour pur et éternel,<br/>
+                  Tandis que l&apos;encens s&apos;élève en volutes blondes,<br/>
                   Et que les chœurs chantent un hymne solennel.
                 </p>
                 <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-6">
-                  Comme le tsar et la tsarine d'antan,<br/>
-                  Ils se tiennent, mains jointes, devant l'autel,<br/>
-                  Leur amour, plus fort que le temps qui s'étend,<br/>
+                  Comme le tsar et la tsarine d&apos;antan,<br/>
+                  Ils se tiennent, mains jointes, devant l&apos;autel,<br/>
+                  Leur amour, plus fort que le temps qui s&apos;étend,<br/>
                   Est béni par le prêtre, gardien du ciel.
                 </p>
                 <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-0">
