@@ -9,13 +9,13 @@ const GuideDressCode = () => {
         
         <div className="flex justify-center items-center gap-2 mb-10">
           <Heart className="text-secondary" size={20} />
-          <h3 className="font-serif text-2xl">Romantique & Chic</h3>
+          <h3 className="font-serif text-2xl">Romantique &amp; Chic</h3>
           <Heart className="text-secondary" size={20} />
         </div>
         
         <p className="text-center max-w-3xl mx-auto mb-10">
           Chers invités, nous sommes ravis de vous accueillir pour notre célébration au magnifique Château de Percey. 
-          Pour compléter l'élégance romantique de notre lieu et créer une atmosphère harmonieuse, 
+          Pour compléter l&apos;élégance romantique de notre lieu et créer une atmosphère harmonieuse, 
           nous vous prions de bien vouloir respecter les consignes vestimentaires suivantes :
         </p>
         
@@ -61,7 +61,7 @@ const GuideDressCode = () => {
               </div>
               
               <div className="mb-6">
-                <h4 className="font-sans uppercase tracking-widest text-xs mb-3 text-secondary">Merci d'éviter :</h4>
+                <h4 className="font-sans uppercase tracking-widest text-xs mb-3 text-secondary">Merci d&apos;éviter :</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-secondary mt-2 mr-2"></span>
@@ -115,13 +115,13 @@ const GuideDressCode = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-secondary mt-2 mr-2"></span>
-                    <span>Motifs floraux délicats (pas d'imprimés animaliers)</span>
+                    <span>Motifs floraux délicats (pas d&apos;imprimés animaliers)</span>
                   </li>
                 </ul>
               </div>
               
               <div className="mb-6">
-                <h4 className="font-sans uppercase tracking-widest text-xs mb-3 text-secondary">Merci d'éviter :</h4>
+                <h4 className="font-sans uppercase tracking-widest text-xs mb-3 text-secondary">Merci d&apos;éviter :</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="inline-block w-2 h-2 rounded-full bg-secondary mt-2 mr-2"></span>
@@ -157,7 +157,7 @@ const GuideDressCode = () => {
                   <p className="font-serif text-lg mb-2">Notes importantes</p>
                   <ul className="space-y-2">
                     <li>
-                      Les chemises blanches sont parfaitement acceptables pour les messieurs lorsqu'elles sont associées à un costume de couleur.
+                      Les chemises blanches sont parfaitement acceptables pour les messieurs lorsqu&apos;elles sont associées à un costume de couleur.
                     </li>
                     <li>
                       Les costumes noirs sont déconseillés car ils donnent une impression trop formelle/sobre, mais les costumes bleu marine sont les bienvenus.
@@ -218,7 +218,7 @@ const GuideDressCode = () => {
             </div>
             
             <div className="bg-accent p-4 text-center">
-              <p>Veuillez éviter les verts forêt foncés, les bleus marine, et les noirs, ainsi que les néons trop vifs ou les métallisés flashy. Cela dit si votre tenue de cœur se trouve dans ces nuances foncées, l'essentiel, reste votre présence à nos côtés</p>
+              <p>Veuillez éviter les verts forêt foncés, les bleus marine, et les noirs, ainsi que les néons trop vifs ou les métallisés flashy. Cela dit si votre tenue de cœur se trouve dans ces nuances foncées, l&apos;essentiel, reste votre présence à nos côtés</p>
             </div>
           </div>
           
@@ -231,7 +231,7 @@ const GuideDressCode = () => {
             
             <div className="mt-6">
               <p className="font-serif">Avec amour et gratitude,</p>
-              <p className="font-serif italic">Sandrine & Alexandre</p>
+              <p className="font-serif italic">Sandrine &amp; Alexandre</p>
             </div>
           </div>
         </div>

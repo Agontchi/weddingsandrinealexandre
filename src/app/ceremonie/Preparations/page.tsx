@@ -78,7 +78,7 @@ export default function PreparationPage() {
                   
                   <div className="mt-6 p-4 bg-accent text-sm">
                     <p className="font-semibold mb-2">Note importante :</p>
-                    <p>Veuillez manger avant d'arriver car aucun dîner formel ne sera servi. Vous êtes invités à apporter de la nourriture à consommer au château.</p>
+                    <p>Veuillez manger avant d&apos;arriver car aucun dîner formel ne sera servi. Vous êtes invités à apporter de la nourriture à consommer au château.</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export default function PreparationPage() {
                   <p className="mb-4">Petit déjeuner offert au château</p>
                   
                   <p className="font-semibold mb-1">13:45 - 15:00</p>
-                  <p className="mb-4">Cérémonie à l'église de Saint-Florentin</p>
+                  <p className="mb-4">Cérémonie à l&apos;église de Saint-Florentin</p>
                   
                   <p className="font-semibold mb-1">17:00 - 19:00</p>
                   <p className="mb-4">Cocktail</p>
@@ -112,7 +112,7 @@ export default function PreparationPage() {
                   <p className="mb-4">Départ</p>
                   
                   <div className="mt-6 p-4 bg-accent text-sm">
-                    <p>Vous pouvez rester au château jusqu'au 16h00.</p>
+                    <p>Vous pouvez rester au château jusqu&apos;au 16h00.</p>
                   </div>
                 </div>
               </div>
@@ -215,10 +215,10 @@ export default function PreparationPage() {
                 <div className="bg-accent p-6">
                   <h4 className="font-semibold text-lg mb-2">Au château</h4>
                   <p className="mb-4">
-                    Le château dispose de 65 lits pour les invités. L'hébergement au château sera attribué en fonction des groupes familiaux et de la distance parcourue.
+                    Le château dispose de 65 lits pour les invités. L&apos;hébergement au château sera attribué en fonction des groupes familiaux et de la distance parcourue.
                   </p>
                   <p className="text-sm">
-                    Veuillez indiquer vos préférences d'hébergement dans le formulaire de réponse. Nous confirmerons vos détails d'hébergement avant [date].
+                    Veuillez indiquer vos préférences d&apos;hébergement dans le formulaire de réponse. Nous confirmerons vos détails d&apos;hébergement avant [date].
                   </p>
                 </div>
                 
@@ -233,7 +233,7 @@ export default function PreparationPage() {
                     <li className="mb-1">[B&amp;B Name] - 3km du lieu</li>
                   </ul>
                   <p className="mt-2 text-sm italic">
-                    Utilisez le code "WEDDING2025" lors de la réservation pour bénéficier d'un tarif spécial.
+                    Utilisez le code &quot;WEDDING2025&quot; lors de la réservation pour bénéficier d&apos;un tarif spécial.
                   </p>
                 </div>
               </div>
@@ -265,19 +265,19 @@ export default function PreparationPage() {
               </Link>
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-center">
-              <h2 className="font-serif text-3xl text-center md:text-left mb-8">Transport du château à l'église</h2>
+              <h2 className="font-serif text-3xl text-center md:text-left mb-8">Transport du château à l&apos;église</h2>
               <p className="mb-4 text-center md:text-left">
-                La cérémonie religieuse aura lieu à l'église de Saint-Florentin&nbsp;:
+                La cérémonie religieuse aura lieu à l&apos;église de Saint-Florentin&nbsp;:
                 <br />
                 <strong>Place Louis Dubost, 89600 Saint-Florentin, France</strong>
               </p>
 
               <p className="mb-4">
-                L'utilisation de votre propre voiture est fortement conseillée pour vous rendre à l'église depuis le château. Si vous ne venez pas en voiture et que vous ne savez pas comment vous rendre à l'église, merci de nous le faire savoir en bas du formulaire de réponse afin que nous puissions vous assigner une voiture.
+                L&apos;utilisation de votre propre voiture est fortement conseillée pour vous rendre à l&apos;église depuis le château. Si vous ne venez pas en voiture et que vous ne savez pas comment vous rendre à l&apos;église, merci de nous le faire savoir en bas du formulaire de réponse afin que nous puissions vous assigner une voiture.
               </p>
               <div className="p-4 bg-accent text-sm rounded mb-4">
                 <p className="font-semibold mb-2">Important&nbsp;:</p>
-                <p>Le trajet entre le château et l'église dure environ 10-15 minutes en voiture. Merci d'organiser votre déplacement à l'avance pour arriver à l'heure à la cérémonie. Visez 13h45 pour être assis dans l'église.</p>
+                <p>Le trajet entre le château et l&apos;église dure environ 10-15 minutes en voiture. Merci d&apos;organiser votre déplacement à l&apos;avance pour arriver à l&apos;heure à la cérémonie. Visez 13h45 pour être assis dans l&apos;église.</p>
               </div>
               <div className="text-center md:text-left mb-8">
                 <a 
@@ -355,7 +355,7 @@ export default function PreparationPage() {
             
             {/* What to Bring */}
             <div className="bg-white p-8 shadow-md">
-              <h3 className="font-serif text-2xl mb-6 text-center">Ce qu'il faut apporter</h3>
+              <h3 className="font-serif text-2xl mb-6 text-center">Ce qu&apos;il faut apporter</h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
@@ -363,7 +363,7 @@ export default function PreparationPage() {
                   <ul className="list-disc pl-5 mb-4">
                     <li className="mb-2">Vêtements adaptés à la météo (vérifiez la prévision)</li>
                     <li className="mb-2">Chaussures confortables pour les terrains du château</li>
-                    <li className="mb-2">Maillot de bain (pour ceux qui prévoient d'utiliser la piscine)</li>
+                    <li className="mb-2">Maillot de bain (pour ceux qui prévoient d&apos;utiliser la piscine)</li>
                     <li className="mb-2">Produits de toilette personnels</li>
                     <li className="mb-2">Médicaments nécessaires</li>
                     <li className="mb-2">Chargeur de téléphone</li>
@@ -417,9 +417,9 @@ export default function PreparationPage() {
                   Samedi matin, vous pouvez visiter la région de Chablis:
                 </p>
                 <ul className="list-disc pl-5">
-                  <li className="mb-2">Petit déjeuner au château (10:00)</li>
-                  <li className="mb-2">Dégustation de vin (11:30)</li>
-                  <li className="mb-2">Préparations à la cérémonie (12:30)</li>
+                  <li className="mb-1">Petit déjeuner au château (10:00)</li>
+                  <li className="mb-1">Dégustation de vin (11:30)</li>
+                  <li className="mb-1">Préparations à la cérémonie (12:30)</li>
                 </ul>
                 <p className="text-sm mt-2">
                   Inscrivez-vous pour les activités dans le formulaire de réponse.
@@ -459,7 +459,7 @@ export default function PreparationPage() {
               <div className="mb-6">
                 <h4 className="font-semibold text-lg mb-3">Arrivée vendredi</h4>
                 <p>
-                  Veuillez noter qu'aucun dîner formel ne sera servi vendredi. Nous vous recommandons de manger avant d'arriver ou d'apporter de la nourriture à consommer au château. Amenez vos spiritueux pour la soirée.
+                  Veuillez noter qu&apos;aucun dîner formel ne sera servi vendredi. Nous vous recommandons de manger avant d&apos;arriver ou d&apos;apporter de la nourriture à consommer au château. Amenez vos spiritueux pour la soirée.
                 </p>
               </div>
 
@@ -493,7 +493,7 @@ export default function PreparationPage() {
       <section id="rsvp" className="py-16 bg-accent">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl text-center mb-6">Formulaire de réponse et d'information</h2>
+            <h2 className="font-serif text-3xl text-center mb-6">Formulaire de réponse et d&apos;information</h2>
             <p className="text-center mb-8">
               Veuillez compléter ce formulaire avant [date limite] pour nous aider à finaliser les arrangements.
             </p>
@@ -536,7 +536,7 @@ export default function PreparationPage() {
                 <h1 className="mb-2">Helena Gontcharova</h1>
                 <p className="mb-2">+33 6 19 31 58 55</p>
                 <p className="mb-4">helenafr23@yahoo.fr</p>
-                <p className="text-sm italic">Uniquement en cas d'urgence</p>
+                <p className="text-sm italic">Uniquement en cas d&apos;urgence</p>
               </div>
               
               <div className="text-center p-6 border border-gray-200">
