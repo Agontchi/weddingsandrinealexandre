@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Desktop Navigation - Right */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/ceremonie/preparations" className="nav-link hover:text-gray-400">Préparations</Link>
-            <Link href="/ceremonie/horaire" className="nav-link hover:text-gray-400">Horaire</Link>
+            <Link href="/ceremonie/plans" className="nav-link hover:text-gray-400">Plans</Link>
             <Link href="/pages/questions" className="nav-link hover:text-gray-400">Questions</Link>
           </div>
 
@@ -78,35 +78,35 @@ export default function Navbar() {
                 Home
               </Link>
               <Link 
-                href="/notre-histoire" 
+                href="/pages/notre-histoire" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link 
-                href="/nos-voeux" 
+                href="/pages/nos-voeux" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Nos Voeux
               </Link>
               <Link 
-                href="/preparations" 
+                href="/ceremonie/preparations" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Préparations
               </Link>
               <Link 
-                href="/horraires" 
+                href="/ceremonie/plans" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Horraires
+                Plans
               </Link>
               <Link 
-                href="/questions" 
+                href="/pages/questions" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >

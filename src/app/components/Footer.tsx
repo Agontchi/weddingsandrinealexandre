@@ -17,20 +17,19 @@ export default function Footer() {
           
           {/* Navigation */}
           <div className="text-center md:text-left">
-            <h3 className="uppercase tracking-widest text-sm font-sans mb-6">Navigate</h3>
+            <h3 className="uppercase tracking-widest text-sm font-sans mb-6">Navigation</h3>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <Link href="/team" className="block text-sm mb-3 uppercase hover:text-gray-500">The Team</Link>
-                <Link href="/process" className="block text-sm mb-3 uppercase hover:text-gray-500">The Process</Link>
+                <Link href="/pages/notre-histoire" className="block text-sm mb-3 uppercase hover:text-gray-500">Notre Histoire</Link>
+                <Link href="/pages/nos-voeux" className="block text-sm mb-3 uppercase hover:text-gray-500">Nos Voeux</Link>
               </div>
               <div>
-                <Link href="/portfolio" className="block text-sm mb-3 uppercase hover:text-gray-500">The Portfolio</Link>
-                <Link href="/journal" className="block text-sm mb-3 uppercase hover:text-gray-500">The Journal</Link>
+                <Link href="/ceremonie/preparations" className="block text-sm mb-3 uppercase hover:text-gray-500">Préparations</Link>
+                <Link href="/ceremonie/plans" className="block text-sm mb-3 uppercase hover:text-gray-500">Plans</Link>
               </div>
             </div>
             <div className="mt-4">
-              <Link href="/contact" className="block text-sm mb-2 uppercase hover:text-gray-500">Contact Us</Link>
-              <Link href="/subscribe" className="block text-sm uppercase hover:text-gray-500">Subscribe</Link>
+              <Link href="/contact" className="block text-sm mb-2 uppercase hover:text-gray-500">Questions</Link>
             </div>
           </div>
           

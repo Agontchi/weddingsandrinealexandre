@@ -41,6 +41,14 @@ const CountdownTimer: React.FC = () => {
         return () => clearTimeout(timer);
     });
 
+    // Mapping English interval names to French
+    const INTERVAL_LABELS_FR: Record<string, string> = {
+        days: 'jours',
+        hours: 'heures',
+        minutes: 'minutes',
+        seconds: 'secondes',
+    };
+
     const timerComponents = Object.keys(timeLeft).map((interval) => {
         if (!timeLeft[interval as keyof TimeLeft]) {
             return null;
@@ -48,7 +56,7 @@ const CountdownTimer: React.FC = () => {
 
         return (
             <span className="text-2xl font-bold mx-2" key={interval}>
-                {timeLeft[interval as keyof TimeLeft]} {interval}{" "}
+                {timeLeft[interval as keyof TimeLeft]} {INTERVAL_LABELS_FR[interval] || interval}{' '}
             </span>
         );
     });

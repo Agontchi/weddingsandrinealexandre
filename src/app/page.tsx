@@ -27,12 +27,12 @@ export default function Home() {
           {/* Hero Content */}
           <div className="flex flex-col items-center justify-center h-full pt-12 px-4 text-center">
             <div className="bg-white bg-opacity-95 p-8 md:p-12 logo-container max-w-md">
-              <h1 className="font-serif text-3xl md:text-4xl uppercase tracking-widest mb-2">Invision Events</h1>
-              <p className="text-sm uppercase tracking-wider mb-0">Wedding Planning & Design</p>
+              <h1 className="font-serif text-3xl md:text-4xl uppercase tracking-widest mb-2">Un Mariage au Château de Percey</h1>
+              <p className="text-sm uppercase tracking-wider mb-0">8,9 et 10 août 2025</p>
             </div>
             
             <div className="mt-auto mb-16 text-white">
-              <p className="uppercase tracking-widest text-xs md:text-sm mb-2">Scroll to begin</p>
+              <p className="uppercase tracking-widest text-xs md:text-sm mb-2">Faites défiler pour commencer</p>
               <div className="h-12 w-px bg-white mx-auto"></div>
             </div>
           </div>
@@ -94,14 +94,37 @@ export default function Home() {
       {/* Countdown Timer */}
       <CountdownTimer />
       
-      {/* Testimonial Section */}
+      {/* Poem Section */}
       <section className="py-16 bg-secondary text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto px-4 relative">
             <div className="testimonial-content text-center">
-              <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
-                I don&apos;t even want to imagine what our wedding day would have looked like without Courtney Wolf and the Invision team. Even the week of the wedding I had minor ideas in my head, and Courtney&apos;s response to executing them was always &quot;Of Course!&quot; The day of the wedding we were not left out but not to worry about a single thing because we knew we were in such great hands and everything would be taken care of, and it was! Wedding planning can be stressful but Invision made it seamless and fun to plan. Courtney, genuinely helps if you go to work with Invision. Thank you Courtney and Invision Events for making May 5th 2018 a dream and the greatest day of our lives!!
-              </p>
+              <blockquote lang="fr" className="poem-text">
+                <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-6">
+                  Sous la plume d'un Pouchkine renaissant,<br/>
+                  L'union sacrée, telle une icône d'or,<br/>
+                  Brille dans l'église aux coupoles d'argent.<br/>
+                  Deux âmes s'unissent en un seul accord.
+                </p>
+                <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-6">
+                  Les couronnes orthodoxes sur leurs fronts,<br/>
+                  Symboles d'un amour pur et éternel,<br/>
+                  Tandis que l'encens s'élève en volutes blondes,<br/>
+                  Et que les chœurs chantent un hymne solennel.
+                </p>
+                <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-6">
+                  Comme le tsar et la tsarine d'antan,<br/>
+                  Ils se tiennent, mains jointes, devant l'autel,<br/>
+                  Leur amour, plus fort que le temps qui s'étend,<br/>
+                  Est béni par le prêtre, gardien du ciel.
+                </p>
+                <p className="italic font-serif text-lg md:text-xl leading-relaxed whitespace-pre-line text-white mb-0">
+                  Ainsi, dans la tradition des anciens,<br/>
+                  Deux cœurs deviennent un, liés à jamais,<br/>
+                  Par les rites sacrés des orthodoxiens,<br/>
+                  Un mariage, comme un poème parfait.
+                </p>
+              </blockquote>
             </div>
           </div>
         </div>
@@ -114,9 +137,6 @@ export default function Home() {
             <div className="testimonial-content text-center">
               <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
                 Nous sommes ravis de vous accueillir &agrave; notre mariage et esp&eacute;rons que vous passerez un moment inoubliable en notre compagnie. C&apos;est un honneur de partager ce jour sp&eacute;cial avec vous.
-              </p>
-              <p className="italic font-serif text-base md:text-lg leading-relaxed mb-6">
-                Pour toute question, n&apos;h&eacute;sitez pas &agrave; nous contacter &agrave; l&apos;adresse &quot;contact@alexsandrine2025.com&quot; ou par t&eacute;l&eacute;phone au &quot;06 00 00 00 00&quot;.
               </p>
             </div>
           </div>
