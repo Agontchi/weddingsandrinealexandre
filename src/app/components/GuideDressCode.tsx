@@ -195,14 +195,18 @@ const GuideDressCode = () => {
               </div>
               
               <div className="space-y-2">
-                <h4 className="font-sans uppercase tracking-widest text-xs text-center text-secondary">Neutres doux</h4>
+                <h4 className="font-sans uppercase tracking-widest text-xs text-center text-secondary">Tons élégants</h4>
                 <div className="flex flex-wrap justify-center gap-2">
-                  <div className="w-12 h-12 rounded-full bg-[#F9F6EE] border border-gray-200" title="Crème"></div>
-                  <div className="w-12 h-12 rounded-full bg-[#F5F5DC]" title="Beige"></div>
-                  <div className="w-12 h-12 rounded-full bg-[#F7E7CE]" title="Champagne"></div>
-                  <div className="w-12 h-12 rounded-full bg-[#E5E5E5]" title="Gris clair"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#B7C9A8]" title="Vert sauge"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#C9D6DF]" title="Bleu pâle"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#D8A7B1]" title="Vieux rose"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#FFD6B0]" title="Pêche douce"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#FFF3B0]" title="Jaune doux"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#D9CFC1]" title="Taupe clair"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#E8C1A0]" title="Terracotta pâle"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#F6E7B4]" title="Or doux"></div>
                 </div>
-                <p className="text-center text-xs">Crème, beige, champagne, gris clair</p>
+                <p className="text-center text-xs">Vert sauge, bleu pâle, vieux rose, pêche douce, jaune doux, taupe clair, terracotta pâle, or doux</p>
               </div>
               
               <div className="space-y-2">

@@ -18,7 +18,7 @@ export default function PreparationPage() {
             <h1 className="font-serif text-4xl md:text-5xl mb-6">Votre guide pour notre week-end de mariage</h1>
             <p className="text-lg mb-8">Tout ce que vous devez savoir sur notre célébration au Château de Percey</p>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-2">
-              <Link href="#rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-0 md:mx-2">
+              <Link href="/ceremonie/rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-0 md:mx-2">
                 Répondez maintenant
               </Link>
               <Link href="#dresscode" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
@@ -199,7 +199,7 @@ export default function PreparationPage() {
               </p>
               <div className="text-center">
                 <Link 
-                  href="#rsvp" 
+                  href="/ceremonie/rsvp" 
                   className="btn inline-block bg-white text-secondary border-white hover:bg-transparent hover:text-white"
                 >
                   Enregistrez votre voiture ou trouvez un trajet
@@ -277,7 +277,7 @@ export default function PreparationPage() {
               </div>
               <div className="text-center md:text-left mb-8">
                 <a 
-                  href="#rsvp" 
+                  href="/ceremonie/rsvp" 
                   className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary"
                 >
                   Trouvez un lift
@@ -473,7 +473,7 @@ export default function PreparationPage() {
                 </p>
                 <div className="text-center">
                   <Link 
-                    href="#rsvp" 
+                    href="/ceremonie/rsvp" 
                     className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white"
                   >
                     Nous aviser de vos alergies et restrictions alimentaires
@@ -497,11 +497,11 @@ export default function PreparationPage() {
             <div className="bg-white p-8 shadow-md">
               <div className="mb-8 text-center">
                 <a 
-                  href="https://forms.google.com/your-form-link" 
+                  href="/ceremonie/rsvp" 
                   target="_blank" 
                   className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary"
                 >
-                  Ouvrir le formulaire Google
+                  Ouvrir le formulaire
                 </a>
               </div>
               
