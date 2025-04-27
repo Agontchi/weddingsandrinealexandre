@@ -408,17 +408,16 @@ export default function PreparationPage() {
               
               {/* Saturday Activities */}
               <div className="bg-accent p-6">
-                <h3 className="font-serif text-xl mb-4">Samedi libre</h3>
+                <h3 className="font-serif text-xl mb-4">Samedi</h3>
                 <p className="mb-4">
-                  Samedi matin, vous pouvez visiter la région de Chablis:
+                  Le Jour J!
                 </p>
                 <ul className="list-disc pl-5">
-                  <li className="mb-1">Petit déjeuner au château (10:00)</li>
-                  <li className="mb-1">Dégustation de vin (11:30)</li>
-                  <li className="mb-1">Préparations à la cérémonie (12:30)</li>
+                  <li className="mb-1">Les details arrivent</li>
+
                 </ul>
                 <p className="text-sm mt-2">
-                  Inscrivez-vous pour les activités dans le formulaire de réponse.
+
                 </p>
               </div>
               
@@ -462,7 +461,7 @@ export default function PreparationPage() {
               <div className="mb-6">
               <h4 className="font-semibold text-lg mb-3">Samedi matin</h4>
                 <p>
-              Un petit déjeuner est offert avec croissants, pains au chocolat et œufs que vous pourrez préparer vous-même dans la cuisine du château.
+              Un petit déjeuner est offert avec croissants, pains au chocolat, œufs et autres accompannements.
               Si vous avez un grand appétit, nous vous invitons à amener votre propre nourriture (vous pourrez la stocker dans le frigo) ou à aller manger dans les environs.
                 </p>
               </div>
@@ -491,7 +490,7 @@ export default function PreparationPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="font-serif text-3xl text-center mb-6">Formulaire de réponse et d&apos;information</h2>
             <p className="text-center mb-8">
-              Veuillez compléter ce formulaire avant [date limite] pour nous aider à finaliser les arrangements.
+              Veuillez compléter ce formulaire avant le 15 mai 2025 pour nous aider à finaliser les arrangements.
             </p>
             
             <div className="bg-white p-8 shadow-md">
@@ -511,8 +510,6 @@ export default function PreparationPage() {
                   <li className="mb-1">Arrangements de transport</li>
                   <li className="mb-1">Options de covoiturage (offrant/demandant des trajets)</li>
                   <li className="mb-1">Restrictions alimentaires</li>
-                  <li className="mb-1">Inscriptions aux activités</li>
-                  <li className="mb-1">Exigences spéciales</li>
                 </ul>
               </div>
             </div>
