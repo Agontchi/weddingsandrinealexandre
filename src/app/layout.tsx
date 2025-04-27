@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Invision Events | Wedding Planning & Design',
-  description: 'Luxury wedding planning and event design services',
+  title: 'Mariage Sandrine & Alexandre | Château de Percey',
+  description: 'Toutes les informations pour le mariage de Sandrine & Alexandre au Château de Percey : programme, dress code, logistique et formulaire de réponse.',
 }
 
 export default function RootLayout({
