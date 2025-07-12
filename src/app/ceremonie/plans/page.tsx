@@ -55,7 +55,7 @@ export default function PlansPage() {
               <h3 className="font-serif text-2xl mb-6 text-center">Attention, avis à tous les gourmands et les amateurs de soirée</h3>
               
               <p className="mb-4 text-center">
-                Le vendredi soir, nous ne servons aucun repas, donc, à moins que vous ne souhaitiez découvrir l'art du jeûne, nous vous recommandons de manger avant votre arrivée. C'est un peu comme une pré-réception gastronomique... sans nous. 😄
+                Le vendredi soir, nous ne servons aucun repas, donc, à moins que vous ne souhaitiez découvrir l&apos;art du jeûne, nous vous recommandons de manger avant votre arrivée. C&apos;est un peu comme une pré-réception gastronomique... sans nous. 😄
               </p>
               
               <p className="mb-4 text-center">
@@ -179,7 +179,7 @@ export default function PlansPage() {
               
               <div className="p-4 bg-accent text-center">
                 <p className="italic">
-                  La liste définitive des attributions de chambres sera communiquée une semaine avant l'événement.
+                  La liste définitive des attributions de chambres sera communiquée une semaine avant l&apos;événement.
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function PlansPage() {
                   <div className="md:col-span-2">
                     <p>
                       <span className="inline-flex items-center"><span className="mr-2">✓</span> Serviettes de toilette</span><br/>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Draps et taies d'oreiller</span><br/>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Draps et taies d&apos;oreiller</span><br/>
                       <span className="inline-flex items-center"><span className="mr-2">✓</span> Couvertures supplémentaires</span>
                     </p>
                   </div>
@@ -233,7 +233,7 @@ export default function PlansPage() {
                     <p>
                       <span className="inline-flex items-center"><span className="mr-2">✓</span> Sèche-cheveux (disponible dans chaque chambre et salle de bain)</span><br/>
                       <span className="inline-flex items-center"><span className="mr-2">✓</span> Fer à repasser et tables à repasser (plusieurs disponibles)</span><br/>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Produits d'accueil de base (savon, shampoing)</span><br/>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Produits d&apos;accueil de base (savon, shampoing)</span><br/>
                     </p>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function PlansPage() {
                       </label><br/>
                       <label className="inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Vos produits d'hygiène habituels (complément aux produits de base fournis)</span>
+                        <span className="ml-2">Vos produits d&apos;hygiène habituels (complément aux produits de base fournis)</span>
                       </label><br/>
                       <label className="inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
