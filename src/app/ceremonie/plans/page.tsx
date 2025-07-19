@@ -21,96 +21,175 @@ export default function PlansPage() {
       <section className="pt-32 pb-16 bg-secondary text-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-5xl mb-6">Plans et détails du week-end</h1>
+            <h1 className="font-serif text-3xl md:text-5xl mb-6">Plans et détails du week-end</h1>
             <p className="text-lg mb-8">Informations importantes pour notre célébration au Château de Percey</p>
             
-            {/* Navigation Icons */}
-            <div className="max-w-3xl mx-auto mt-12">
-              <div className="mb-6">
-                <p className="text-lg font-medium mb-3">Avant l&apos;arrivée</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#adresse" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
+            {/* Structured Navigation */}
+            <div className="mt-8">
+              {/* Desktop Navigation */}
+              <div className="hidden md:block">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                  {/* Overview */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                    <h3 className="font-serif text-lg mb-3 text-center">Vue d'ensemble</h3>
+                    <div className="space-y-2">
+                      <Link href="#schedule" className="block text-sm hover:text-accent transition-colors">
+                        📅 Calendrier complet
+                      </Link>
                     </div>
-                    <span className="text-sm font-medium">Adresse</span>
-                  </a>
+                  </div>
                   
-                  <a href="#guide-bagages" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
+                  {/* Friday */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                    <h3 className="font-serif text-lg mb-3 text-center">Vendredi 8 août</h3>
+                    <div className="space-y-2">
+                      <Link href="#vendredi" className="block text-sm hover:text-accent transition-colors">
+                        🍾 Arrivée & Accueil
+                      </Link>
+                      <Link href="#chambres" className="block text-sm hover:text-accent transition-colors">
+                        🏰 Plan des chambres
+                      </Link>
                     </div>
-                    <span className="text-sm font-medium">Bagages</span>
-                  </a>
-                  <a href="#regles" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
+                  </div>
+                  
+                  {/* Saturday */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                    <h3 className="font-serif text-lg mb-3 text-center">Samedi 9 août</h3>
+                    <div className="space-y-2">
+                      <Link href="#samedi" className="block text-sm hover:text-accent transition-colors">
+                        💒 Cérémonie & Fête
+                      </Link>
+                      <Link href="#plansdetable" className="block text-sm hover:text-accent transition-colors">
+                        🍽️ Plan des tables
+                      </Link>
                     </div>
-                    <span className="text-sm font-medium">Règles</span>
-                  </a>
+                  </div>
+                  
+                  {/* Sunday & Rules */}
+                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                    <h3 className="font-serif text-lg mb-3 text-center">Dimanche & Infos</h3>
+                    <div className="space-y-2">
+                      <Link href="#dimanche" className="block text-sm hover:text-accent transition-colors">
+                        🥐 Brunch & Départ
+                      </Link>
+                      <Link href="#regles" className="block text-sm hover:text-accent transition-colors">
+                        📋 Règles importantes
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              <div className="mb-6">
-                <p className="text-lg font-medium mb-3">Vendredi</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#vendredi" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium">Programme</span>
-                  </a>
-                </div>
-                <a href="#chambres" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium">Chambres</span>
-                  </a>
-              </div>
-              
-              <div className="mb-6">
-                <p className="text-lg font-medium mb-3">Samedi</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#samedi" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium">Programme</span>
-                  </a>
-                </div>
-              </div>
-              
-              <div className="mb-6">
-                <p className="text-lg font-medium mb-3">Dimanche</p>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <a href="#dimanche" className="flex flex-col items-center group">
-                    <div className="w-16 h-16 rounded-full bg-white text-secondary flex items-center justify-center mb-2 transform transition-transform group-hover:scale-110 shadow-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="text-sm font-medium">Programme</span>
-                  </a>
+              {/* Mobile Navigation */}
+              <div className="md:hidden">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                  <h3 className="font-serif text-lg mb-4 text-center">Navigation rapide</h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    <Link href="#schedule" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        📅<br />Calendrier
+                      </span>
+                    </Link>
+                    <Link href="#vendredi" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        🍾<br />Vendredi
+                      </span>
+                    </Link>
+                    <Link href="#chambres" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        🏰<br />Chambres
+                      </span>
+                    </Link>
+                    <Link href="#samedi" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        💒<br />Samedi
+                      </span>
+                    </Link>
+                    <Link href="#plansdetable" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        🍽️<br />Tables
+                      </span>
+                    </Link>
+                    <Link href="#dimanche" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        🥐<br />Dimanche
+                      </span>
+                    </Link>
+                    <Link href="#regles" className="flex items-center justify-center p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                      <span className="text-sm text-center">
+                        📋<br />Règles
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Weekend Schedule */}
+      <section id="schedule" className="py-16 bg-accent">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl text-center mb-12">Calendrier du week-end</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Friday */}
+              <div className="bg-white p-8 shadow-md">
+                <h3 className="font-serif text-2xl mb-4 text-center">Vendredi</h3>
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="font-semibold mb-1">19:00 - 20:00+</p>
+                  <p className="mb-4">Arrivé et Accueil</p>
+                  
+                  <p className="font-semibold mb-1">20:00 - 22:00</p>
+                  <p className="mb-4">Réunion de bienvenue</p>
+                  
+                  <div className="mt-6 p-4 bg-accent text-sm">
+                    <p className="font-semibold mb-2">Note importante :</p>
+                    <p>Veuillez manger avant d&apos;arriver car aucun dîner formel ne sera servi. Vous êtes invités à apporter de la nourriture à consommer au château.</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Saturday */}
+              <div className="bg-white p-8 shadow-md">
+                <h3 className="font-serif text-2xl mb-4 text-center">Samedi</h3>
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="font-semibold mb-1">08:00 - 12:00</p>
+                  <p className="mb-4">Petit déjeuner offert au château</p>
+                  
+                  <p className="font-semibold mb-1">14:00 - 15:30</p>
+                  <p className="mb-4">Cérémonie à l&apos;église de Saint-Florentin</p>
+                  
+                  <p className="font-semibold mb-1">17:30 - 19:00</p>
+                  <p className="mb-4">Cocktail</p>
+                  
+                  <p className="font-semibold mb-1">19:00 - 04:00</p>
+                  <p className="mb-4">Dîner et Fête</p>
+                </div>
+              </div>
+              
+              {/* Sunday */}
+              <div className="bg-white p-8 shadow-md">
+                <h3 className="font-serif text-2xl mb-4 text-center">Dimanche</h3>
+                <div className="border-t border-gray-200 pt-4">
+                  <p className="font-semibold mb-1">10:00 - 13:00</p>
+                  <p className="mb-4">Brunch offert au château</p>
+                  
+                  <p className="font-semibold mb-1">13:00 - 16:00</p>
+                  <p className="mb-4">Départ</p>
+                  
+                  <div className="mt-6 p-4 bg-accent text-sm">
+                    <p>Vous pouvez rester au château jusqu&apos;à 16h00.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       
       {/* Friday Evening Schedule */}
       <section id="vendredi" className="py-16 bg-white">
@@ -163,76 +242,6 @@ export default function PlansPage() {
         </div>
       </section>
 
-       {/* Château Address and Location */}
-       <section id="adresse" className="py-16 bg-white">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-center mb-12">Adresse du château</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              {/* Location */}
-              <div>
-                <h3 className="font-serif text-2xl mb-4">Le lieu</h3>
-                <p className="mb-4">
-                  <strong>Château de Percey</strong><br />
-                  1 Rue nationale, 89360 <br />
-                  Percey, France
-                </p>
-                <div className="mb-4">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2407.641889628783!2d3.8191460809344036!3d47.96329761959889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee60934f3f9f07%3A0x48e2187b21f20ce7!2sChateau%20de%20Percey!5e1!3m2!1sen!2sca!4v1745100551424!5m2!1sen!2sca"
-                    width="100%"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Carte Google Maps du Château de Percey"
-                  ></iframe>
-                </div>
-                
-                <div className="mt-4 flex flex-col gap-2">
-                  <Link 
-                    href="https://maps.app.goo.gl/Eka8L4YYPTvpzond9" 
-                    target="_blank" 
-                    className="text-primary hover:underline"
-                  >
-                    Voir sur Google Maps →
-                  </Link>
-                  <Link
-                    href="https://maps.app.goo.gl/aGwQVFPZ5KWnHaTy5"
-                    target="_blank"
-                    className="text-primary hover:underline"
-                  >
-                    Itinéraire Château → Église (Google Maps)
-                  </Link>
-                </div>
-              </div>
-              
-              {/* Transportation */}
-              <div>
-                <h3 className="font-serif text-2xl mb-4">Options de transport</h3>
-                <div className="space-y-3">
-                  
-                  <p><strong>Aéroport Roissy Charles de Gaulle</strong> : 191 KM via A5 : 2H15 en voiture.</p>
-                  <p><strong>Paris</strong> : péage Fleury en Bière / Auxerre péage Nord 169 km : puis 30 minutes de voiture direction St Florentin, Percey.</p>
-                  <p><strong>Avallon</strong> : 72 km via D957 : 1H10 en voiture.</p>
-                  <p><strong>Dijon Centre</strong> : 57 km via D28 et autoroute de Lorraine/Bourgogne : 1H30 en voiture.</p>
-                  <p><strong>Lyon</strong> : 309 KM via autoroute A6 : 3H15 en voiture.</p>
-                  
-                </div>
-                <div className="p-4 bg-accent mt-4">
-                  <h4 className="font-semibold mb-2">Transport en commun :</h4>
-                  <ul className="list-disc pl-5">
-                  <p><strong>Gare Paris Bercy</strong> → <strong>Gare St Florentin-Vergigny</strong> : 1H30 en train puis 10 minutes en voiture.</p>
-                  <p><strong>Lyon Part-Dieu</strong> → <strong>Gare St Florentin-Vergigny</strong> : 3H30 en train.</p>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       
       {/* Room Plans */}
       <section id="chambres" className="py-16 bg-accent">
@@ -281,265 +290,7 @@ export default function PlansPage() {
       
       
       {/* Baggage Guide */}
-      <section id="guide-bagages" className="py-16 bg-light">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl text-center mb-12">Guide des bagages pour votre séjour</h2>
-            
-            <div className="bg-white p-8 shadow-md mb-12 border-l-4 border-primary" style={{ backgroundImage: "linear-gradient(to right, rgba(220, 220, 220, 0.1) 1px, transparent 1px)", backgroundSize: "25px 100%" }}>
-              <h3 className="font-serif text-2xl mb-6 text-center">Guide des bagages pour votre séjour au Château de Percey</h3>
-              
-              <div className="mb-8">
-                
-                
-                <div className="mb-8">
-                <h4 className="font-semibold text-xl mb-4 bg-secondary text-white py-2 px-4 inline-block">FOURNI PAR LE CHÂTEAU</h4>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-                  <div>
-                    <h5 className="font-semibold mb-2">Catégorie</h5>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold mb-2">Articles fournis</h5>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Linge de maison</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Serviettes de toilette</span><br/>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Draps et taies d&apos;oreiller</span><br/>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Couvertures supplémentaires</span>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Équipements</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Sèche-cheveux (disponible dans chaque chambre et salle de bain)</span><br/>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Fer à repasser et tables à repasser (plusieurs disponibles)</span><br/>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Produits d&apos;accueil de base (savon, shampoing)</span><br/>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Services</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Wifi gratuit</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <h4 className="font-semibold text-xl mb-4 bg-primary text-white py-2 px-4 inline-block">À APPORTER OBLIGATOIREMENT</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-                  <div>
-                    <h5 className="font-semibold mb-2">Catégorie</h5>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold mb-2">Articles</h5>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Piscine</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Maillots de bain</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Serviettes de piscine</span>
-                      </label>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Hygiène personnelle</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Votre trousse de toilette complète</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Vos produits d&apos;hygiène habituels (complément aux produits de base fournis)</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Médicaments personnels</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Lunettes de soleil</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Crème solaire</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Démaquillant et produits de beauté personnels</span>
-                      </label>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Coiffure et beauté</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Appareils pour les cheveux (sèche-cheveux disponible dans chaque chambre)</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Produits coiffants</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Accessoires cheveux</span>
-                      </label>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Accessoires</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Evantails et vaporisateurs rafraichissants</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Sac à main ou pochette pour la soirée</span>
-                      </label><br/>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Chargeurs pour vos appareils électroniques</span>
-                      </label>
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Documents</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
-                        <span className="ml-2">Témoins uniquement : passeport obligatoire</span>
-                      </label>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mb-8">
-                <h4 className="font-semibold text-xl mb-4 bg-accent py-2 px-4 inline-block">RECOMMANDATIONS SPÉCIALES BOURGOGNE</h4>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-                  <div>
-                    <h5 className="font-semibold mb-2">Suggestion</h5>
-                  </div>
-                  <div>
-                    <h5 className="font-semibold mb-2">Détails</h5>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Météo</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>Vérifiez les prévisions avant le départ - la Bourgogne peut être imprévisible</p>
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                  <div>
-                    <p>Chaussures</p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p>Privilégiez des chaussures confortables pour visiter les jardins du château</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-white p-8 shadow-md">
-              <h3 className="font-serif text-2xl mb-6 text-center">🛒 COMMERCES À PROXIMITÉ</h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-                <div>
-                  <h5 className="font-semibold mb-2">Distance</h5>
-                </div>
-                <div>
-                  <h5 className="font-semibold mb-2">Direction</h5>
-                </div>
-                <div>
-                  <h5 className="font-semibold mb-2">Commerces disponibles</h5>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                <div>
-                  <p>6 km</p>
-                </div>
-                <div>
-                  <p>À gauche en sortant (direction Flogny-la-Chapelle)</p>
-                </div>
-                <div>
-                  <p>• Tabac<br/>• Presse<br/>• Boulangerie<br/>• Fromages</p>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
-                <div>
-                  <p>8 km</p>
-                </div>
-                <div>
-                  <p>À droite en sortant (direction Saint-Florentin)</p>
-                </div>
-                <div>
-                  <p>• Tabac<br/>• Presse<br/>• Grande surface</p>
-                </div>
-              </div>
-              
-              <div className="text-center mt-6 italic">
-                <p>Parfait pour les achats de dernière minute ou les envies gourmandes !</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       
       {/* Saturday Schedule */}
       <section id="samedi" className="py-16 bg-accent">
@@ -565,6 +316,8 @@ export default function PlansPage() {
                     <p>Si vous êtes de grand mangeurs on vous invite a luncher dans les environs</p>
                   </div>
                 </div>
+
+                
                 
                 <div className="flex flex-col md:flex-row items-start gap-4">
                   <div className="md:w-1/4 text-center md:text-right">
@@ -575,6 +328,56 @@ export default function PlansPage() {
                     <p>Arrivez en avance, donc prévoyez un peu de temps pour vous y rendre</p>
                   </div>
                 </div>
+
+                {/* Transport vers l'église */}
+                      <section className="py-16 bg-white">
+                        <div className="container-custom">
+                          <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
+                            <div className="w-full md:w-1/2 h-full">
+                              <div className="relative h-80 md:h-full min-h-[300px] rounded-lg overflow-hidden">
+                                <Image 
+                                  src="/images/trajet_chateau_eglise.png" 
+                                  alt="Carte du trajet Château → Église" 
+                                  fill
+                                  className="object-cover"
+                                  priority
+                                />
+                              </div>
+                              <Link
+                                href="https://maps.app.goo.gl/aGwQVFPZ5KWnHaTy5"
+                                target="_blank"
+                                className="text-primary hover:underline mb-4"
+                              >
+                                Itinéraire Château → Église (Google Maps)
+                              </Link>
+                            </div>
+                            <div className="w-full md:w-1/2 flex flex-col justify-center">
+                              <h2 className="font-serif text-3xl text-center md:text-left mb-8">Transport du château à l&apos;église</h2>
+                              <p className="mb-4 text-center md:text-left">
+                                La cérémonie religieuse aura lieu à l&apos;église de Saint-Florentin&nbsp;:
+                                <br />
+                                <strong>Place Louis Dubost, 89600 Saint-Florentin, France</strong>
+                              </p>
+                
+                              <p className="mb-4">
+                                L&apos;utilisation de votre propre voiture est fortement conseillée pour vous rendre à l&apos;église depuis le château. Si vous ne venez pas en voiture et que vous ne savez pas comment vous rendre à l&apos;église, merci de nous le faire savoir en bas du formulaire de réponse afin que nous puissions vous assigner une voiture.
+                              </p>
+                              <div className="p-4 bg-accent text-sm rounded mb-4">
+                                <p className="font-semibold mb-2">Important&nbsp;:</p>
+                                <p>Le trajet entre le château et l&apos;église dure environ 10-15 minutes en voiture. Merci d&apos;organiser votre déplacement à l&apos;avance pour arriver à l&apos;heure à la cérémonie. Visez 13h45 pour être assis dans l&apos;église.</p>
+                              </div>
+                              <div className="text-center md:text-left mb-8">
+                                {/* <a 
+                                  href="/ceremonie/rsvp" 
+                                  className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary"
+                                >
+                                  Trouvez un lift
+                                </a> */}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
 
                 <div className="flex flex-col md:flex-row items-start gap-4">
                   <div className="md:w-1/4 text-center md:text-right">
@@ -620,13 +423,13 @@ export default function PlansPage() {
               </div>
             </div>
             
-            <div className="bg-white p-8 shadow-md mt-12">
+            <div className="bg-white p-8 shadow-md mt-12" id="plansdetable">
               <h3 className="font-serif text-2xl mb-6 text-center">Plan de table</h3>
               <p className="text-center mb-6">
                 Trouvez votre place pour le dîner en entrant votre nom ci-dessous.
               </p>
               
-              <SeatingPlan />
+              <SeatingPlan/>
             </div>
           </div>
         </div>

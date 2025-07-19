@@ -21,12 +21,19 @@ export default function PreparationPage() {
               {/* <Link href="/ceremonie/rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-0 md:mx-2">
                 Répondez maintenant
               </Link> */}
-              <Link href="#dresscode" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
-                Voir le dress code
-              </Link>
               <Link href="#logistics" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
                 Voir les détails logistiques
               </Link>
+              <Link href="#guide-bagages" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
+                Voir le guide des bagages
+              </Link>
+              <Link href="#dresscode" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
+                Voir le dress code
+              </Link>
+              <Link href="#otherinfo" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
+                Autres Infos
+              </Link>
+
             </div>
           </div>
         </div>
@@ -60,7 +67,7 @@ export default function PreparationPage() {
       </section>
       
       {/* Weekend Schedule */}
-      <section id="schedule" className="py-16 bg-accent">
+<section id="schedule" className="py-16 bg-accent">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-3xl text-center mb-12">Calendrier du week-end</h2>
@@ -90,10 +97,10 @@ export default function PreparationPage() {
                   <p className="font-semibold mb-1">08:00 - 12:00</p>
                   <p className="mb-4">Petit déjeuner offert au château</p>
                   
-                  <p className="font-semibold mb-1">13:45 - 15:00</p>
+                  <p className="font-semibold mb-1">14:00 - 15:30</p>
                   <p className="mb-4">Cérémonie à l&apos;église de Saint-Florentin</p>
                   
-                  <p className="font-semibold mb-1">17:00 - 19:00</p>
+                  <p className="font-semibold mb-1">17:30 - 19:00</p>
                   <p className="mb-4">Cocktail</p>
                   
                   <p className="font-semibold mb-1">19:00 - 04:00</p>
@@ -105,7 +112,7 @@ export default function PreparationPage() {
               <div className="bg-white p-8 shadow-md">
                 <h3 className="font-serif text-2xl mb-4 text-center">Dimanche</h3>
                 <div className="border-t border-gray-200 pt-4">
-                  <p className="font-semibold mb-1">09:00 - 13:00</p>
+                  <p className="font-semibold mb-1">10:00 - 13:00</p>
                   <p className="mb-4">Brunch offert au château</p>
                   
                   <p className="font-semibold mb-1">13:00 - 16:00</p>
@@ -238,55 +245,267 @@ export default function PreparationPage() {
         </div>
       </section>
       
-      {/* Transport vers l'église */}
-      <section className="py-16 bg-white">
+      {/* Baggage Guide */}
+      <section id="guide-bagages" className="py-16 bg-light">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-1/2 h-full">
-              <div className="relative h-80 md:h-full min-h-[300px] rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/trajet_chateau_eglise.png" 
-                  alt="Carte du trajet Château → Église" 
-                  fill
-                  className="object-cover"
-                  priority
-                />
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl text-center mb-12">Guide des bagages pour votre séjour</h2>
+            
+            <div className="bg-white p-8 shadow-md mb-12 border-l-4 border-primary" style={{ backgroundImage: "linear-gradient(to right, rgba(220, 220, 220, 0.1) 1px, transparent 1px)", backgroundSize: "25px 100%" }}>
+              <h3 className="font-serif text-2xl mb-6 text-center">Guide des bagages pour votre séjour au Château de Percey</h3>
+              
+              <div className="mb-8">
+                
+                
+                <div className="mb-8">
+                <h4 className="font-semibold text-xl mb-4 bg-secondary text-white py-2 px-4 inline-block">FOURNI PAR LE CHÂTEAU</h4>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                  <div>
+                    <h5 className="font-semibold mb-2">Catégorie</h5>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold mb-2">Articles fournis</h5>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Linge de maison</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Serviettes de toilette</span><br/>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Draps et taies d&apos;oreiller</span><br/>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Couvertures supplémentaires</span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Équipements</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Sèche-cheveux (disponible dans chaque chambre et salle de bain)</span><br/>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Fer à repasser et tables à repasser (plusieurs disponibles)</span><br/>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Produits d&apos;accueil de base (savon, shampoing)</span><br/>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Services</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <span className="inline-flex items-center"><span className="mr-2">✓</span> Wifi gratuit</span>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <Link
-                href="https://maps.app.goo.gl/aGwQVFPZ5KWnHaTy5"
-                target="_blank"
-                className="text-primary hover:underline mb-4"
-              >
-                Itinéraire Château → Église (Google Maps)
-              </Link>
+              <h4 className="font-semibold text-xl mb-4 bg-primary text-white py-2 px-4 inline-block">À APPORTER OBLIGATOIREMENT</h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                  <div>
+                    <h5 className="font-semibold mb-2">Catégorie</h5>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold mb-2">Articles</h5>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Piscine</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Maillots de bain</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Serviettes de piscine</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Hygiène personnelle</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Votre trousse de toilette complète</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Vos produits d&apos;hygiène habituels (complément aux produits de base fournis)</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Médicaments personnels</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Lunettes de soleil</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Crème solaire</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Démaquillant et produits de beauté personnels</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Coiffure et beauté</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Appareils pour les cheveux (sèche-cheveux disponible dans chaque chambre)</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Produits coiffants</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Accessoires cheveux</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Accessoires</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Evantails et vaporisateurs rafraichissants</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Sac à main ou pochette pour la soirée</span>
+                      </label><br/>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Chargeurs pour vos appareils électroniques</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Documents</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>
+                      <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" className="form-checkbox h-5 w-5 text-primary" />
+                        <span className="ml-2">Témoins uniquement : passeport obligatoire</span>
+                      </label>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mb-8">
+                <h4 className="font-semibold text-xl mb-4 bg-accent py-2 px-4 inline-block">RECOMMANDATIONS SPÉCIALES BOURGOGNE</h4>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                  <div>
+                    <h5 className="font-semibold mb-2">Suggestion</h5>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold mb-2">Détails</h5>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Météo</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>Vérifiez les prévisions avant le départ - la Bourgogne peut être imprévisible</p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                  <div>
+                    <p>Chaussures</p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <p>Privilégiez des chaussures confortables pour visiter les jardins du château</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="w-full md:w-1/2 flex flex-col justify-center">
-              <h2 className="font-serif text-3xl text-center md:text-left mb-8">Transport du château à l&apos;église</h2>
-              <p className="mb-4 text-center md:text-left">
-                La cérémonie religieuse aura lieu à l&apos;église de Saint-Florentin&nbsp;:
-                <br />
-                <strong>Place Louis Dubost, 89600 Saint-Florentin, France</strong>
-              </p>
-
-              <p className="mb-4">
-                L&apos;utilisation de votre propre voiture est fortement conseillée pour vous rendre à l&apos;église depuis le château. Si vous ne venez pas en voiture et que vous ne savez pas comment vous rendre à l&apos;église, merci de nous le faire savoir en bas du formulaire de réponse afin que nous puissions vous assigner une voiture.
-              </p>
-              <div className="p-4 bg-accent text-sm rounded mb-4">
-                <p className="font-semibold mb-2">Important&nbsp;:</p>
-                <p>Le trajet entre le château et l&apos;église dure environ 10-15 minutes en voiture. Merci d&apos;organiser votre déplacement à l&apos;avance pour arriver à l&apos;heure à la cérémonie. Visez 13h45 pour être assis dans l&apos;église.</p>
+            
+            <div className="bg-white p-8 shadow-md">
+              <h3 className="font-serif text-2xl mb-6 text-center">🛒 COMMERCES À PROXIMITÉ</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                <div>
+                  <h5 className="font-semibold mb-2">Distance</h5>
+                </div>
+                <div>
+                  <h5 className="font-semibold mb-2">Direction</h5>
+                </div>
+                <div>
+                  <h5 className="font-semibold mb-2">Commerces disponibles</h5>
+                </div>
               </div>
-              <div className="text-center md:text-left mb-8">
-                {/* <a 
-                  href="/ceremonie/rsvp" 
-                  className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary"
-                >
-                  Trouvez un lift
-                </a> */}
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                <div>
+                  <p>6 km</p>
+                </div>
+                <div>
+                  <p>À gauche en sortant (direction Flogny-la-Chapelle)</p>
+                </div>
+                <div>
+                  <p>• Tabac<br/>• Presse<br/>• Boulangerie<br/>• Fromages</p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 border-b border-gray-200">
+                <div>
+                  <p>8 km</p>
+                </div>
+                <div>
+                  <p>À droite en sortant (direction Saint-Florentin)</p>
+                </div>
+                <div>
+                  <p>• Tabac<br/>• Presse<br/>• Grande surface</p>
+                </div>
+              </div>
+              
+              <div className="text-center mt-6 italic">
+                <p>Parfait pour les achats de dernière minute ou les envies gourmandes !</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      
       
       {/* What to Bring & Dress Code */}
       <section className="py-16 bg-light">
@@ -350,14 +569,14 @@ export default function PreparationPage() {
             <GuideDressCode />
             
             {/* What to Bring */}
-            <div className="bg-white p-8 shadow-md">
+            {/* <div className="bg-white p-8 shadow-md">
               <h3 className="font-serif text-2xl mb-6 text-center">Ce qu&apos;il faut apporter</h3>
               
               <div className="text-center">
                 <p className="mb-6">Pour vous aider à préparer votre séjour, nous avons créé un guide détaillé des bagages.</p>
                 
                 <Link 
-                  href="/ceremonie/plans#guide-bagages" 
+                  href="/ceremonie/preparations#guide-bagages" 
                   className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary inline-flex items-center"
                 >
                   <span>Voir le guide des bagages</span>
@@ -372,18 +591,18 @@ export default function PreparationPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
       
       {/* Activities & Amenities */}
-      <section className="py-16 bg-white">
+      <section id="otherinfo" className="py-16 bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-3xl text-center mb-12">Activités et équipements</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* At the Château */}
               <div className="bg-accent p-6">
                 <h3 className="font-serif text-xl mb-4">Au château</h3>
@@ -393,22 +612,7 @@ export default function PreparationPage() {
                   <li className="mb-2">Pétanque</li>
                   <li className="mb-2">Faire coucou à Margeritte et Clementine</li>
                 </ul>
-              </div>
-              
-              {/* Saturday Activities */}
-              <div className="bg-accent p-6">
-                <h3 className="font-serif text-xl mb-4">Samedi</h3>
-                <p className="mb-4">
-                  Le Jour J!
-                </p>
-                <ul className="list-disc pl-5">
-                  <li className="mb-1">Les details arrivent</li>
-
-                </ul>
-                <p className="text-sm mt-2">
-
-                </p>
-              </div>
+              </div>          
               
               {/* Nearby Attractions */}
               <div className="bg-accent p-6">
@@ -457,14 +661,14 @@ export default function PreparationPage() {
               <div>
                 <h4 className="font-semibold text-lg mb-3">Régimes alimentaires</h4>
                 <p className="mb-4">
-                  Nous ferons de notre mieux pour accommoder les restrictions et allergies alimentaires. Veuillez indiquer toute exigence spéciale dans le formulaire de réponse.
+                  Nous ferons de notre mieux pour accommoder les restrictions et allergies alimentaires. Verifier le plan de table pour voir si nous avons bien noté vos alergies et restrictions alimentaires.
                 </p>
                 <div className="text-center">
                   <Link 
-                    href="/ceremonie/rsvp" 
+                    href="/ceremonie/plans#plansdetable" 
                     className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white"
                   >
-                    Nous aviser de vos alergies et restrictions alimentaires
+                    Voir le plan de table
                   </Link>
                 </div>
               </div>
@@ -474,7 +678,7 @@ export default function PreparationPage() {
       </section>
       
       {/* RSVP & Information Form */}
-      <section id="rsvp" className="py-16 bg-accent">
+      {/* <section id="rsvp" className="py-16 bg-accent">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-serif text-3xl text-center mb-6">Formulaire de réponse et d&apos;information</h2>
@@ -504,7 +708,7 @@ export default function PreparationPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       
       {/* Contact Information */}
       <section className="py-16 bg-white">
