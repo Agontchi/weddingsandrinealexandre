@@ -165,7 +165,7 @@ export default function QuestionsPage() {
                   <h3 className="font-semibold text-xl mb-3">Jusqu&apos;à quelle heure puis-je rester le dimanche ?</h3>
                   <p>
                     Vous pouvez rester au château jusqu&apos;à 16h00 le dimanche. 
-                    Le brunch sera servi de 10h00 à 12h00, suivi des au revoir jusqu'au départ.
+                    Le brunch sera servi de 10h00 à 12h00, suivi des au revoir jusqu&apos;au départ.
                   </p>
                 </div>
               </div>
