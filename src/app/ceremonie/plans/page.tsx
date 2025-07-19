@@ -31,7 +31,7 @@ export default function PlansPage() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
                   {/* Overview */}
                   <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                    <h3 className="font-serif text-lg mb-3 text-center">Vue d'ensemble</h3>
+                    <h3 className="font-serif text-lg mb-3 text-center">Vue d&apos;ensemble</h3>
                     <div className="space-y-2">
                       <Link href="#schedule" className="block text-sm hover:text-accent transition-colors">
                         📅 Calendrier complet
@@ -360,7 +360,7 @@ export default function PlansPage() {
                               </p>
                 
                               <p className="mb-4">
-                                L&apos;utilisation de votre propre voiture est fortement conseillée pour vous rendre à l&apos;église depuis le château. Si vous ne venez pas en voiture et que vous ne savez pas comment vous rendre à l&apos;église, merci de nous le faire savoir en bas du formulaire de réponse afin que nous puissions vous assigner une voiture.
+                                L&apos;utilisation de votre propre voiture est fortement conseillée pour vous rendre à l&apos;église depuis le château. Si vous ne venez pas en voiture et nous vous assignons une voiture le jour J. Nous avons le nombre de voitures nécessaire pour transporter tous les invités.
                               </p>
                               <div className="p-4 bg-accent text-sm rounded mb-4">
                                 <p className="font-semibold mb-2">Important&nbsp;:</p>
