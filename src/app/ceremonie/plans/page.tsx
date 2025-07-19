@@ -571,7 +571,7 @@ export default function PlansPage() {
                     <p className="font-semibold text-xl">14:00</p>
                   </div>
                   <div className="md:w-3/4">
-                    <p className="font-semibold text-xl mb-2">Arrivée et Accueil à L'Église de Saint Florentin</p>
+                    <p className="font-semibold text-xl mb-2">Arrivée et Accueil à L&apos;Église de Saint Florentin</p>
                     <p>Arrivez en avance, donc prévoyez un peu de temps pour vous y rendre</p>
                   </div>
                 </div>
@@ -614,7 +614,7 @@ export default function PlansPage() {
                   </div>
                   <div className="md:w-3/4">
                     <p className="font-semibold text-xl mb-2">Soirée dansante</p>
-                    <p>Jusqu'au bout de la nuit !</p>
+                    <p>Jusqu&apos;au bout de la nuit !</p>
                   </div>
                 </div>
               </div>

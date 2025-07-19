@@ -148,6 +148,8 @@ const getInitials = (name: string): string => {
 };
 
 // Get display name for hover (first name + last initial)
+// Commented out as it's not currently used but may be needed in the future
+/* 
 const getDisplayName = (name: string): string => {
   if (!name || name.trim() === '') return '';
   
@@ -157,6 +159,7 @@ const getDisplayName = (name: string): string => {
   // First name + last name initial
   return `${parts[0]} ${parts[parts.length - 1].charAt(0)}.`;
 };
+*/
 
 const SeatingPlan = () => {
   const [searchTerm, setSearchTerm] = useState('');
