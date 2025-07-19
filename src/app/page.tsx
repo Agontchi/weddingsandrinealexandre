@@ -96,6 +96,45 @@ export default function Home() {
       {/* Countdown Timer */}
       <CountdownTimer />
       
+      {/* Ceremony Links Section */}
+      <section className="py-16 bg-light">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-serif text-3xl md:text-4xl mb-8 text-primary">Informations sur la cérémonie</h2>
+            <p className="text-lg mb-12 text-gray-700">Découvrez tous les détails pour notre grand jour</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Preparations Link */}
+              <Link href="/ceremonie/preparations" className="group">
+                <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-4xl mb-4">💍</div>
+                  <h3 className="font-serif text-xl mb-3 text-primary group-hover:text-secondary transition-colors">Préparations</h3>
+                  <p className="text-gray-600">Tout ce qu'il faut savoir pour se préparer à notre mariage</p>
+                </div>
+              </Link>
+              
+              {/* Plans Link */}
+              <Link href="/ceremonie/plans" className="group">
+                <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-4xl mb-4">📋</div>
+                  <h3 className="font-serif text-xl mb-3 text-primary group-hover:text-secondary transition-colors">Plans & Détails</h3>
+                  <p className="text-gray-600">Programme du week-end, plans des tables et règles importantes</p>
+                </div>
+              </Link>
+              
+              {/* Questions Link */}
+              <Link href="/ceremonie/questions" className="group">
+                <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="text-4xl mb-4">❓</div>
+                  <h3 className="font-serif text-xl mb-3 text-primary group-hover:text-secondary transition-colors">Questions</h3>
+                  <p className="text-gray-600">Réponses aux questions fréquemment posées</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Poem Section */}
       <section className="py-16 bg-secondary text-white">
         <div className="container-custom">

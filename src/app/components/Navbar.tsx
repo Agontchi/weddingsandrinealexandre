@@ -14,8 +14,8 @@ export default function Navbar() {
           {/* Desktop Navigation - Left */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="nav-link hover:text-gray-400">Home</Link>
-            <Link href="/pages/notre-histoire" className="nav-link hover:text-gray-400">Notre Histoire</Link>
-            <Link href="/pages/nos-voeux" className="nav-link hover:text-gray-400">Nos Voeux</Link>
+            {/* <Link href="/pages/notre-histoire" className="nav-link hover:text-gray-400">Notre Histoire</Link>
+            <Link href="/pages/nos-voeux" className="nav-link hover:text-gray-400">Nos Voeux</Link> */}
           </div>
 
           {/* Always Centered Logo */}
@@ -77,7 +77,7 @@ export default function Navbar() {
               >
                 Home
               </Link>
-              <Link 
+              {/* <Link 
                 href="/pages/notre-histoire" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
@@ -90,7 +90,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Nos Voeux
-              </Link>
+              </Link> */}
               <Link 
                 href="/ceremonie/preparations" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"

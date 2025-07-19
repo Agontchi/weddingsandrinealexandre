@@ -19,8 +19,8 @@ export default function Footer() {
             <h3 className="uppercase tracking-widest text-sm font-sans mb-6">Navigation</h3>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <Link href="/pages/notre-histoire" className="block text-sm mb-3 uppercase hover:text-gray-500">Notre Histoire</Link>
-                <Link href="/pages/nos-voeux" className="block text-sm mb-3 uppercase hover:text-gray-500">Nos Voeux</Link>
+                {/* <Link href="/pages/notre-histoire" className="block text-sm mb-3 uppercase hover:text-gray-500">Notre Histoire</Link>
+                <Link href="/pages/nos-voeux" className="block text-sm mb-3 uppercase hover:text-gray-500">Nos Voeux</Link> */}
               </div>
               <div>
                 <Link href="/ceremonie/preparations" className="block text-sm mb-3 uppercase hover:text-gray-500">Préparations</Link>

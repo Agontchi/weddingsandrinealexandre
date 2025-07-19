@@ -530,6 +530,31 @@ export default function PlansPage() {
               </div>
 
             </div>
+            
+            {/* Gifts Questions */}
+            <div className="mb-12 mt-12">
+              <h2 className="font-serif text-3xl mb-8 text-center">Cadeaux</h2>
+              
+              <div className="space-y-6">
+                <div className="bg-primary text-white p-6 rounded-lg">
+                  <h3 className="font-semibold text-xl mb-3">Que pouvons-nous vous offrir comme cadeau ?</h3>
+                  <p className="mb-4">
+                    Comme vous le savez peut-être, nous vivons à Montréal — ce qui rend les valises (et les retours !) un peu compliqués…
+                  </p>
+                  <p className="mb-4">
+                    Nous vous demandons simplement d&apos;éviter les objets physiques, 
+                    car nous ne pourrons malheureusement pas les emporter avec nous.
+                  </p>
+                  <p className="mb-4">
+                    Une cagnotte sera mise à disposition. 
+                    Elle nous aidera à réaliser un projet qui nous tient à cœur (comme notre voyage de noces, ou notre futur chez-nous).
+                  </p>
+                  <p>
+                    Nous vous remercions pour votre générosité! 
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
