@@ -29,7 +29,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/ceremonie/preparations" className="nav-link hover:text-gray-400">Préparations</Link>
             <Link href="/ceremonie/plans" className="nav-link hover:text-gray-400">Plans</Link>
-            <Link href="/pages/questions" className="nav-link hover:text-gray-400">Questions</Link>
+            <Link href="/ceremonie/questions" className="nav-link hover:text-gray-400">Questions</Link>
           </div>
 
           {/* Mobile menu button */}
@@ -106,7 +106,7 @@ export default function Navbar() {
                 Plans
               </Link>
               <Link 
-                href="/pages/questions" 
+                href="/ceremonie/questions" 
                 className="nav-link block py-2 text-primary hover:text-gray-500"
                 onClick={() => setMobileMenuOpen(false)}
               >
