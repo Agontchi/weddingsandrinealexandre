@@ -109,7 +109,7 @@ export default function Home() {
                 <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                   <div className="text-4xl mb-4">💍</div>
                   <h3 className="font-serif text-xl mb-3 text-primary group-hover:text-secondary transition-colors">Préparations</h3>
-                  <p className="text-gray-600">Tout ce qu'il faut savoir pour se préparer à notre mariage</p>
+                  <p className="text-gray-600">Tout ce qu&apos;il faut savoir pour se préparer à notre mariage</p>
                 </div>
               </Link>
               
