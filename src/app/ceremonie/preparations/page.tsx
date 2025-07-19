@@ -18,9 +18,9 @@ export default function PreparationPage() {
             <h1 className="font-serif text-4xl md:text-5xl mb-6">Votre guide pour notre week-end de mariage</h1>
             <p className="text-lg mb-8">Tout ce que vous devez savoir sur notre célébration au Château de Percey</p>
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-2">
-              <Link href="/ceremonie/rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-0 md:mx-2">
+              {/* <Link href="/ceremonie/rsvp" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white mx-0 md:mx-2">
                 Répondez maintenant
-              </Link>
+              </Link> */}
               <Link href="#dresscode" className="btn border-white text-white hover:bg-white hover:text-secondary mx-0 md:mx-2">
                 Voir le dress code
               </Link>
@@ -70,7 +70,7 @@ export default function PreparationPage() {
               <div className="bg-white p-8 shadow-md">
                 <h3 className="font-serif text-2xl mb-4 text-center">Vendredi</h3>
                 <div className="border-t border-gray-200 pt-4">
-                  <p className="font-semibold mb-1">16:00 - 20:00</p>
+                  <p className="font-semibold mb-1">19:00 - 20:00+</p>
                   <p className="mb-4">Arrivé et Accueil</p>
                   
                   <p className="font-semibold mb-1">20:00 - 22:00</p>
@@ -112,7 +112,7 @@ export default function PreparationPage() {
                   <p className="mb-4">Départ</p>
                   
                   <div className="mt-6 p-4 bg-accent text-sm">
-                    <p>Vous pouvez rester au château jusqu&apos;au 16h00.</p>
+                    <p>Vous pouvez rester au château jusqu&apos;à 16h00.</p>
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function PreparationPage() {
               </div>
             </div>
             
-            {/* Carpooling */}
+            {/* Carpooling
             <div className="bg-secondary text-white p-8 rounded-lg mb-12">
               <h3 className="font-serif text-2xl mb-4 text-center">Covoiturage</h3>
               <p className="mb-4 text-center">
@@ -205,13 +205,13 @@ export default function PreparationPage() {
                   Enregistrez votre voiture ou trouvez un trajet
                 </Link>
               </div>
-            </div>
+            </div> */}
             
             {/* Accommodation */}
             <div className="mb-12">
               <h3 className="font-serif text-2xl mb-6 text-center">Hébergement</h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                 <div className="bg-accent p-6">
                   <h4 className="font-semibold text-lg mb-2">Au château</h4>
                   <p className="mb-4">
@@ -226,12 +226,12 @@ export default function PreparationPage() {
 
                 </div>
                 
-                <div className="bg-accent p-6">
+                {/* <div className="bg-accent p-6">
                   <h4 className="font-semibold text-lg mb-2">Options à proximité</h4>
                   <p className="mb-4">
                     Pour les invités qui ne séjournent pas au château, nous vous envoyons les informations sur les hébergements au plus tard un mois avant le mariage.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -276,12 +276,12 @@ export default function PreparationPage() {
                 <p>Le trajet entre le château et l&apos;église dure environ 10-15 minutes en voiture. Merci d&apos;organiser votre déplacement à l&apos;avance pour arriver à l&apos;heure à la cérémonie. Visez 13h45 pour être assis dans l&apos;église.</p>
               </div>
               <div className="text-center md:text-left mb-8">
-                <a 
+                {/* <a 
                   href="/ceremonie/rsvp" 
                   className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary"
                 >
                   Trouvez un lift
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -353,34 +353,23 @@ export default function PreparationPage() {
             <div className="bg-white p-8 shadow-md">
               <h3 className="font-serif text-2xl mb-6 text-center">Ce qu&apos;il faut apporter</h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-semibold mb-3">Essentiels</h4>
-                  <ul className="list-disc pl-5 mb-4">
-                    <li className="mb-2">Vêtements adaptés à la météo (vérifiez la prévision)</li>
-                    <li className="mb-2">Chaussures confortables pour les terrains du château</li>
-                    <li className="mb-2">Maillot de bain (pour ceux qui prévoient d&apos;utiliser la piscine)</li>
-                    <li className="mb-2">Produits de toilette personnels</li>
-                    <li className="mb-2">Médicaments nécessaires</li>
-                    <li className="mb-2">Chargeur de téléphone</li>
-                  </ul>
-                </div>
+              <div className="text-center">
+                <p className="mb-6">Pour vous aider à préparer votre séjour, nous avons créé un guide détaillé des bagages.</p>
                 
-                <div>
-                  <h4 className="font-semibold mb-3">Articles suggérés</h4>
-                  <ul className="list-disc pl-5 mb-4">
-                    <li className="mb-2">Veste légère ou châle pour le soir</li>
-                    <li className="mb-2">Crème solaire et lunettes de soleil</li>
-                    <li className="mb-2">Appareil photo</li>
-                    <li className="mb-2">Un livre ou des jeux pour les moments de loisir</li>
-                    <li className="mb-2">Gourde réutilisable</li>
-                  </ul>
-                  
-                  <div className="p-4 bg-accent mt-4">
-                    <p className="text-sm">
-                      <strong>Note :</strong> Les serviettes et les draps seront fournis pour les invités qui séjournent au château.
-                    </p>
-                  </div>
+                <Link 
+                  href="/ceremonie/plans#guide-bagages" 
+                  className="btn bg-secondary text-white border-secondary hover:bg-transparent hover:text-secondary inline-flex items-center"
+                >
+                  <span>Voir le guide des bagages</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </Link>
+                
+                <div className="p-4 bg-accent mt-8">
+                  <p className="text-sm">
+                    <strong>Note :</strong> Les serviettes et les draps seront fournis pour les invités qui séjournent au château.
+                  </p>
                 </div>
               </div>
             </div>
