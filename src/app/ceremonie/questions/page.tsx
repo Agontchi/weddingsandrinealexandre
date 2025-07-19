@@ -35,7 +35,7 @@ export default function QuestionsPage() {
                     Comme vous le savez peut-être, nous vivons à Montréal — ce qui rend les valises (et les retours !) un peu compliqués…
                   </p>
                   <p className="mb-4">
-                    Nous vous demandons simplement d'éviter les objets physiques, 
+                    Nous vous demandons simplement d&apos;éviter les objets physiques, 
                     car nous ne pourrons malheureusement pas les emporter avec nous.
                   </p>
                   <p>
@@ -107,7 +107,7 @@ export default function QuestionsPage() {
                     <li>Draps, taies d&apos;oreiller et serviettes de toilette</li>
                     <li>Sèche-cheveux dans chaque chambre</li>
                     <li>Fer à repasser et tables à repasser</li>
-                    <li>Produits d'accueil de base (savon, shampoing)</li>
+                    <li>Produits d&apos;accueil de base (savon, shampoing)</li>
                     <li>Wifi gratuit</li>
                   </ul>
                 </div>
@@ -162,9 +162,9 @@ export default function QuestionsPage() {
                 </div>
 
                 <div className="bg-accent p-6 rounded-lg">
-                  <h3 className="font-semibold text-xl mb-3">Jusqu'à quelle heure puis-je rester le dimanche ?</h3>
+                  <h3 className="font-semibold text-xl mb-3">Jusqu&apos;à quelle heure puis-je rester le dimanche ?</h3>
                   <p>
-                    Vous pouvez rester au château jusqu'à 16h00 le dimanche. 
+                    Vous pouvez rester au château jusqu&apos;à 16h00 le dimanche. 
                     Le brunch sera servi de 10h00 à 12h00, suivi des au revoir jusqu'au départ.
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function QuestionsPage() {
                     <li>Piscine extérieure</li>
                     <li>Jardins pour se promener</li>
                     <li>Espaces de détente</li>
-                    <li>Salle de réception (l'orangerie)</li>
+                    <li>Salle de réception (l&apos;orangerie)</li>
                   </ul>
                   <p className="mt-3">
                     Le samedi matin, nous vous recommandons de visiter Chablis et les environs si vous le souhaitez.
@@ -232,7 +232,7 @@ export default function QuestionsPage() {
                     ou des besoins particuliers concernant votre séjour.
                   </p>
                   <p>
-                    Vous pouvez également consulter nos autres pages pour plus d'informations détaillées :
+                    Vous pouvez également consulter nos autres pages pour plus d&apos;informations détaillées :
                   </p>
                   <div className="flex flex-col md:flex-row gap-4 mt-4">
                     <Link href="/ceremonie/preparations" className="btn bg-white text-secondary border-white hover:bg-transparent hover:text-white">
