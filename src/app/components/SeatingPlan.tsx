@@ -95,10 +95,8 @@ const guests: GuestInfo[] = [
   { name: "Marianne Corbeil", tableNumber: "7", seatPosition: 2, restrictionAlimentaire: "Aucune" },
   { name: "Alexandre Viau", tableNumber: "7", seatPosition: 3, restrictionAlimentaire: "Aucune" },
   { name: "Nathalie Nope Hernandez", tableNumber: "7", seatPosition: 4, restrictionAlimentaire: "Aucune" },
-  { name: "Victoria Nope Viau", tableNumber: "7", seatPosition: 5, restrictionAlimentaire: "" },
-  { name: "Noélie Nope Viau", tableNumber: "7", seatPosition: 6, restrictionAlimentaire: "" },
-  { name: "Guir Chemseddine", tableNumber: "7", seatPosition: 7, restrictionAlimentaire: "Vegetarienne" },
-  { name: "Besma Colosseo", tableNumber: "7", seatPosition: 8, restrictionAlimentaire: "Aucune" },
+  { name: "Victoria Nope Viau", tableNumber: "7", seatPosition: 5, restrictionAlimentaire: "Bébé" },
+  { name: "Noélie Nope Viau", tableNumber: "7", seatPosition: 6, restrictionAlimentaire: "Enfant" },
   
   
   // Table 8 - Famille Gontcharov + Amis de Alexandre
@@ -115,11 +113,11 @@ const guests: GuestInfo[] = [
  { name: "Helena Gontcharova", tableNumber: "9", seatPosition: 1, restrictionAlimentaire: "Aucune" },
  { name: "Yevgen Bolyukh", tableNumber: "9", seatPosition: 2, restrictionAlimentaire: "Aucune" },
  { name: "Olga Gontcharova", tableNumber: "9", seatPosition: 3, restrictionAlimentaire: "Aucune" },
- { name: "Masha Gontcharova", tableNumber: "9", seatPosition: 4, restrictionAlimentaire: "Aucune" },
+ { name: "Masha Gontcharova", tableNumber: "9", seatPosition: 4, restrictionAlimentaire: "Enfant" },
  { name: "Mark Petsikau", tableNumber: "9", seatPosition: 5, restrictionAlimentaire: "Aucune" },
  { name: "Daniil Shuliaiev", tableNumber: "9", seatPosition: 6, restrictionAlimentaire: "Aucune" },
- { name: "Olivia Shuliaieva Gontcharova", tableNumber: "9", seatPosition: 7, restrictionAlimentaire: "Aucune" },
- { name: "Helena Feldman", tableNumber: "9", seatPosition: 8, restrictionAlimentaire: "" },
+ { name: "Olivia Shuliaieva Gontcharova", tableNumber: "9", seatPosition: 7, restrictionAlimentaire: "Bébé" },
+ { name: "Helena Feldman", tableNumber: "9", seatPosition: 8, restrictionAlimentaire: "Aucune" },
  { name: "Alexander Kolisnechenko", tableNumber: "9", seatPosition: 9, restrictionAlimentaire: "Aucune" }
   
   // Add more guests as needed
