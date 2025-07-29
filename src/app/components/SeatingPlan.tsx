@@ -21,7 +21,7 @@ interface TablePosition {
 const tables: Record<string, TablePosition> = {
   "1": { x: 550, y: 150, label: "Table 1", seats: 8 },
   "2": { x: 800, y: 250, label: "Table 2", seats: 8 },
-  "3": { x: 950, y: 450, label: "Table 3", seats: 8 },
+  "3": { x: 950, y: 450, label: "Table 3", seats: 7 },
   "4": { x: 900, y: 700, label: "Table 4", seats: 8 },
   "5": { x: 680, y: 850, label: "Table 5", seats: 7 },
   "6": { x: 420, y: 850, label: "Table 6", seats: 7 },
@@ -37,8 +37,8 @@ const guests: GuestInfo[] = [
   { name: "Mélodie Carey", tableNumber: "1", seatPosition: 3, restrictionAlimentaire: "Vegetarienne" },
   { name: "Zoé Gregoire", tableNumber: "1", seatPosition: 4, restrictionAlimentaire: "Aucune" },
   { name: "Anastasia Gontcharova", tableNumber: "1", seatPosition: 5, restrictionAlimentaire: "Aucune" },
-  { name: "Raphael Gontcharov", tableNumber: "1", seatPosition: 8, restrictionAlimentaire: "Aucune" },
-  { name: "Daniel Gontcharov", tableNumber: "1", seatPosition: 7, restrictionAlimentaire: "Aucune" },
+  { name: "Raphael Gontcharov", tableNumber: "1", seatPosition: 7, restrictionAlimentaire: "Aucune" },
+  { name: "Daniel Gontcharov", tableNumber: "1", seatPosition: 8, restrictionAlimentaire: "Aucune" },
   { name: "Maxence Frisson", tableNumber: "1", seatPosition: 6, restrictionAlimentaire: "Aucune" },
   
   
@@ -53,14 +53,15 @@ const guests: GuestInfo[] = [
   { name: "Emerick Jodoin", tableNumber: "2", seatPosition: 8, restrictionAlimentaire: "Aucune" },
 
   // Table 3 - Amis de Famille Gontcharov
-  { name: "Gauthier Ory", tableNumber: "3", seatPosition: 1, restrictionAlimentaire: "Aucune" },
-  { name: "Allan Lachhar", tableNumber: "3", seatPosition: 2, restrictionAlimentaire: "Aucune" },
-  { name: "Helena Semikina", tableNumber: "3", seatPosition: 3, restrictionAlimentaire: "Aucune" },
-  { name: "Alexandre Petsikau", tableNumber: "3", seatPosition: 4, restrictionAlimentaire: "Aucune" },
-  { name: "David Pottier", tableNumber: "3", seatPosition: 5, restrictionAlimentaire: "Aucune" },
-  { name: "Corinne Pottier", tableNumber: "3", seatPosition: 6, restrictionAlimentaire: "Aucune" },
-  { name: "Mathieu Pottier", tableNumber: "3", seatPosition: 7, restrictionAlimentaire: "Aucune" },
-  { name: "Anna Hogg", tableNumber: "3", seatPosition: 8, restrictionAlimentaire: "Aucune" },
+  
+  { name: "Anna Hogg", tableNumber: "3", seatPosition: 1, restrictionAlimentaire: "Aucune" },
+  { name: "Helena Semikina", tableNumber: "3", seatPosition: 2, restrictionAlimentaire: "Aucune" },
+  { name: "Alexandre Petsikau", tableNumber: "3", seatPosition: 3, restrictionAlimentaire: "Aucune" },
+  { name: "David Pottier", tableNumber: "3", seatPosition: 4, restrictionAlimentaire: "Aucune" },
+  { name: "Corinne Pottier", tableNumber: "3", seatPosition: 5, restrictionAlimentaire: "Aucune" },
+  { name: "Mathieu Pottier", tableNumber: "3", seatPosition: 6, restrictionAlimentaire: "Aucune" },
+  { name: "Ethan Pottier", tableNumber: "3", seatPosition: 7, restrictionAlimentaire: "Aucune" },
+  
   
   // Table 4 - Amis de Sandrine & Alexandre
   { name: "Pierre Andrea Lang", tableNumber: "4", seatPosition: 1, restrictionAlimentaire: "Aucune" },
@@ -92,13 +93,14 @@ const guests: GuestInfo[] = [
   
   // Table 7 - Amis de Sandrine
   { name: "Jonathan", tableNumber: "7", seatPosition: 1, restrictionAlimentaire: "Aucune" },
-  { name: "Marianne Corbeil", tableNumber: "7", seatPosition: 2, restrictionAlimentaire: "Aucune" },
-  { name: "Alexandre Viau", tableNumber: "7", seatPosition: 3, restrictionAlimentaire: "Aucune" },
-  { name: "Nathalie Nope Hernandez", tableNumber: "7", seatPosition: 4, restrictionAlimentaire: "Aucune" },
+  { name: "Alexandre Viau", tableNumber: "7", seatPosition: 2, restrictionAlimentaire: "Aucune" },  
+  { name: "Gauthier Ory", tableNumber: "7", seatPosition: 3, restrictionAlimentaire: "Aucune" },
+  { name: "Allan Lachhar", tableNumber: "7", seatPosition: 4, restrictionAlimentaire: "Aucune" },
   { name: "Victoria Nope Viau", tableNumber: "7", seatPosition: 5, restrictionAlimentaire: "Bébé" },
   { name: "Noélie Nope Viau", tableNumber: "7", seatPosition: 6, restrictionAlimentaire: "Enfant" },
-  
-  
+  { name: "Nathalie Nope Hernandez", tableNumber: "7", seatPosition: 7, restrictionAlimentaire: "Aucune" },
+  { name: "Marianne Corbeil", tableNumber: "7", seatPosition: 8, restrictionAlimentaire: "Aucune" },
+
   // Table 8 - Famille Gontcharov + Amis de Alexandre
   { name: "Anatoliy Gontcharov", tableNumber: "8", seatPosition: 1, restrictionAlimentaire: "Aucune" },
   { name: "Tamara Gontcharova", tableNumber: "8", seatPosition: 2, restrictionAlimentaire: "Aucune" },
