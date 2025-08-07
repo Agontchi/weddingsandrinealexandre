@@ -20,14 +20,14 @@ interface TablePosition {
 // Define table positions in the SVG layout
 const tables: Record<string, TablePosition> = {
   "1": { x: 550, y: 150, label: "Table 1", seats: 8 },
-  "2": { x: 800, y: 250, label: "Table 2", seats: 8 },
-  "3": { x: 950, y: 450, label: "Table 3", seats: 7 },
-  "4": { x: 900, y: 700, label: "Table 4", seats: 8 },
-  "5": { x: 680, y: 850, label: "Table 5", seats: 7 },
-  "6": { x: 420, y: 850, label: "Table 6", seats: 7 },
-  "7": { x: 200, y: 700, label: "Table 7", seats: 8 },
-  "8": { x: 150, y: 450, label: "Table 8", seats: 8 },
-  "9": { x: 280, y: 250, label: "Table 9", seats: 9 },
+  "2": { x: 280, y: 250, label: "Table 2", seats: 8 },
+  "3": { x: 150, y: 450, label: "Table 3", seats: 7 },
+  "4": { x: 200, y: 700, label: "Table 4", seats: 8 },
+  "5": { x: 420, y: 850, label: "Table 5", seats: 7 },
+  "6": { x: 680, y: 850, label: "Table 6", seats: 7 },
+  "7": { x: 900, y: 700, label: "Table 7", seats: 8 },
+  "8": { x: 950, y: 450, label: "Table 8", seats: 8 },
+  "9": { x: 800, y: 250, label: "Table 9", seats: 9 },
 };
 
 const guests: GuestInfo[] = [
@@ -109,7 +109,7 @@ const guests: GuestInfo[] = [
   { name: "Masha Kolisnechenko", tableNumber: "8", seatPosition: 5, restrictionAlimentaire: "Aucune" },
   { name: "Lisa Kolisnechenko", tableNumber: "8", seatPosition: 6, restrictionAlimentaire: "Aucune" },
   { name: "Matveï", tableNumber: "8", seatPosition: 7, restrictionAlimentaire: "Aucune" },
-  { name: "Partenaire de Matveï", tableNumber: "8", seatPosition: 8, restrictionAlimentaire: "Aucune" },
+  { name: "Eve Sersic", tableNumber: "8", seatPosition: 8, restrictionAlimentaire: "Aucune" },
 
  // Table 9 - Famille Gontcharov + Amis des Gontcharov
  { name: "Helena Gontcharova", tableNumber: "9", seatPosition: 1, restrictionAlimentaire: "Aucune" },
